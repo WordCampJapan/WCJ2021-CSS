@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/**
+ * WordCamp Japan 2021 styles
+ */
+ 
+ $color-primary: #315bc2;
+$color-secondary: #db6b31;
+$color-neutral: #fffdf8;
+$color-additional: #34302e;
+$text: $color-additional;
+$alt: $color-neutral;
+
+body, .entry-title a, :root .has-primary-color {
+	color: $text;
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 98rem;
+}
+
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 98rem;
+}
+header#site-header {
+  background: rgba(255, 255, 255, .8)!important;
+  position: fixed!important;
+	width: 100%;
+}
+#site-content {
+    padding-top: 2em;
+}
+@supports ( font-variation-settings: normal ) {
+
+	body {
+		font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+	}
+}
+body, input, textarea, button, .button, .faux-button, .wp-block-button__link, .wp-block-file__button, .has-drop-cap:not(:focus)::first-letter, .has-drop-cap:not(:focus)::first-letter, .entry-content .wp-block-archives, .entry-content .wp-block-categories, .entry-content .wp-block-cover-image, .entry-content .wp-block-latest-comments, .entry-content .wp-block-latest-posts, .entry-content .wp-block-pullquote, .entry-content .wp-block-quote.is-large, .entry-content .wp-block-quote.is-style-large, .entry-content .wp-block-archives *, .entry-content .wp-block-categories *, .entry-content .wp-block-latest-posts *, .entry-content .wp-block-latest-comments *, .entry-content p, .entry-content ol, .entry-content ul, .entry-content dl, .entry-content dt, .entry-content cite, .entry-content figcaption, .entry-content .wp-caption-text, .comment-content p, .comment-content ol, .comment-content ul, .comment-content dl, .comment-content dt, .comment-content cite, .comment-content figcaption, .comment-content .wp-caption-text, .widget_text p, .widget_text ol, .widget_text ul, .widget_text dl, .widget_text dt, .widget-content .rssSummary, .widget-content cite, .widget-content figcaption, .widget-content .wp-caption-text,
+.entry-content {
+	font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content table,
+.entry-content address,
+.entry-content .wp-caption-text,
+.entry-content .wp-block-file {
+	font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.entry-content h1,
+	.entry-content h2,
+	.entry-content h3,
+	.entry-content h4,
+	.entry-content h5,
+	.entry-content h6,
+	.entry-content cite,
+	.entry-content figcaption,
+	.entry-content table,
+	.entry-content address,
+	.entry-content .wp-caption-text,
+	.entry-content .wp-block-file {
+		font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+	}
+}
+
+h1,
+.heading-size-1 {
+	font-size: 3.052rem;
+}
+
+h2,
+.heading-size-2 {
+	font-size: 2.441rem;
+}
+
+h3,
+.heading-size-3 {
+	font-size: 1.953rem;
+}
+
+h4,
+.heading-size-4 {
+	font-size: 1.563rem;
+}
+
+h5,
+.heading-size-5 {
+	font-size: 1.25rem;
+}
+
+h6,
+.heading-size-6 {
+	font-size: 1rem;
+}
+
+html[lang="ja"] h1.entry-title,
+html[lang="ja"] h2.entry-title {
+	text-align: left;
+	font-size: 2.4rem;
+}
+
+@media (min-width: 700px) {
+	html[lang="ja"] h1.entry-title,
+	html[lang="ja"] h2.entry-title {
+		font-size: 3.4rem;
+	}
+}
+
+@media (min-width: 1220px) {
+	html[lang="ja"] h1.entry-title,
+	html[lang="ja"] h2.entry-title {
+		font-size: 4rem;
+	}
+}
+
+html[lang="ja"] .widget .widget-title {
+	font-size: 2rem;
+}
+
+@media (min-width: 700px) {
+	html[lang="ja"] .widget .widget-title {
+		font-size: 2.4rem;
+	}
+}
+
+p {
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+}
+
+a {
+	color: $color-primary;
+}
+input,
+textarea,
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file__button {
+	font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+.wp-block-button__link {
+	text-transform: inherit;
+}
+
+@supports (font-variation-settings: normal) {
+	input,
+	textarea,
+	button,
+	.button,
+	.faux-button,
+	.faux-button.more-link,
+	.wp-block-button__link,
+	.wp-block-file__button {
+		font-family: "Inter var", "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+	}
+}
+
+
+body:not(.overlay-header) .primary- menu > li > a, body:not(.overlay-header) .primary-menu > li > .icon, .modal-menu a, .footer-menu a, .footer-widgets a, #site-footer .wp-block-button.is-style-outline, .wp-block-pullquote:before, .singular:not(.overlay-header) .entry-header a, .archive-header a, .header-footer-group .color-accent, .header-footer-group .color-accent-hover:hover {
+	color: $color-primary;
+}
+body:not(.overlay-header) .primary-menu > li > a, body:not(.overlay-header) .primary-menu > li > .icon, .modal-menu a, .footer-menu a, .footer-widgets a, #site-footer .wp-block-button.is-style-outline, .wp-block-pullquote:before, .singular:not(.overlay-header) .entry-header a, .archive-header a, .header-footer-group .color-accent, .header-footer-group .color-accent-hover:hover {
+	color: $color-primary;
+}
+.color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus):first-letter, .wp-block-button.is-style-outline, a {
+	color: $color-primary;
+}
+.color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus):first-letter, .wp-block-button.is-style-outline, a {
+	color: $color-primary;
+}
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, .bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link {
+	background-color: $color-primary;
+}
+.primary-menu a,
+.entry-categories a {
+	color: $color-primary!important;
+}
+
+
+/* top のページタイトルを非表示 */
+.home h1.entry-title {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
