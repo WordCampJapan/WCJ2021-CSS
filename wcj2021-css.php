@@ -2,7 +2,7 @@
 /**
  * Plugin name: WCJ2021 CSS
  * Description: WordCamp Japan 2021 用 カスタムCSS
- * Version: 0.0.1
+ * Version: 0.0.2
  *
  * @package wcj2021-css
  * @author WordCamp Japan team
