@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+body,
+.entry-title a,
+:root .has-primary-color {
+	color: $text;
+}
+
+.entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 80rem;
+}
+
+#site-content {
+	padding-top: 2em;
+}
+
+@supports (font-variation-settings: normal) {
+
+	body {
+		font-family: $font
+	}
+}
+
+body,
+input,
+textarea,
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file__button,
+.has-drop-cap:not(:focus)::first-letter,
+.has-drop-cap:not(:focus)::first-letter,
+.entry-content .wp-block-archives,
+.entry-content .wp-block-categories,
+.entry-content .wp-block-cover-image,
+.entry-content .wp-block-latest-comments,
+.entry-content .wp-block-latest-posts,
+.entry-content .wp-block-pullquote,
+.entry-content .wp-block-quote.is-large,
+.entry-content .wp-block-quote.is-style-large,
+.entry-content .wp-block-archives *,
+.entry-content .wp-block-categories *,
+.entry-content .wp-block-latest-posts *,
+.entry-content .wp-block-latest-comments *,
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content .wp-caption-text,
+.comment-content p,
+.comment-content ol,
+.comment-content ul,
+.comment-content dl,
+.comment-content dt,
+.comment-content cite,
+.comment-content figcaption,
+.comment-content .wp-caption-text,
+.widget_text p,
+.widget_text ol,
+.widget_text ul,
+.widget_text dl,
+.widget_text dt,
+.widget-content .rssSummary,
+.widget-content cite,
+.widget-content figcaption,
+.widget-content .wp-caption-text,
+.entry-content {
+	font-family: $font
+}
+
+.entry-content {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	cite,
+	figcaption,
+	table,
+	address,
+	.wp-caption-text,
+	.wp-block-file {
+		font-family: $font
+	}
+}
+
+@supports (font-variation-settings: normal) {
+
+	.entry-content {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		cite,
+		figcaption,
+		table,
+		address,
+		.wp-caption-text,
+		.wp-block-file {
+			font-family: $font
+		}
+	}
+}
+
+h1,
+.heading-size-1 {
+	font-size: 3.2rem;
+}
+
+h2,
+.heading-size-2 {
+	font-size: 2.4rem;
+}
+
+h3,
+.heading-size-3 {
+	font-size: 2.0rem;
+}
+
+h4,
+.heading-size-4 {
+	font-size: 1.8rem;
+}
+
+h5,
+.heading-size-5 {
+	font-size: 1.6rem;
+}
+
+h6,
+.heading-size-6 {
+	font-size: 1rem;
+}
+
+html[lang="ja"] h1.entry-title,
+html[lang="ja"] h2.entry-title {
+	text-align: left;
+	font-size: 2.4rem;
+}
+
+@media (min-width: 700px) {
+
+	html[lang="ja"] h1.entry-title,
+	html[lang="ja"] h2.entry-title {
+		font-size: 3.2rem;
+	}
+}
+
+@media (min-width: 1220px) {
+
+	html[lang="ja"] h1.entry-title,
+	html[lang="ja"] h2.entry-title {
+		font-size: 3.2rem;
+	}
+}
+
+html[lang="ja"] .widget .widget-title {
+	font-size: 2rem;
+}
+
+@media (min-width: 700px) {
+	html[lang="ja"] .widget .widget-title {
+		font-size: 2.4rem;
+	}
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+}
+
+a {
+	color: $primary;
+}
+
+input,
+textarea,
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file__button {
+	font-family: $font
+}
+
+.wp-block-button__link {
+	text-transform: inherit;
+}
+
+@supports (font-variation-settings: normal) {
+
+	input,
+	textarea,
+	button,
+	.button,
+	.faux-button,
+	.faux-button.more-link,
+	.wp-block-button__link,
+	.wp-block-file__button {
+		font-family: $font
+	}
+}
+
+
+body:not(.overlay-header) .primary- menu>li>a,
+body:not(.overlay-header) .primary-menu>li>.icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote:before,
+.singular:not(.overlay-header) .entry-header a,
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover {
+	color: $primary;
+}
+
+body:not(.overlay-header) .primary-menu>li>a,
+body:not(.overlay-header) .primary-menu>li>.icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote:before,
+.singular:not(.overlay-header) .entry-header a,
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover {
+	color: $primary;
+}
+
+.color-accent,
+.color-accent-hover:hover,
+.color-accent-hover:focus,
+:root .has-accent-color,
+.has-drop-cap:not(:focus):first-letter,
+.wp-block-button.is-style-outline,
+a {
+	color: $primary;
+}
+
+.color-accent,
+.color-accent-hover:hover,
+.color-accent-hover:focus,
+:root .has-accent-color,
+.has-drop-cap:not(:focus):first-letter,
+.wp-block-button.is-style-outline,
+a {
+	color: $primary;
+}
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.bg-accent,
+.bg-accent-hover:hover,
+.bg-accent-hover:focus,
+:root .has-accent-background-color,
+.comment-reply-link {
+	background-color: $primary;
+}
+
+.primary-menu a,
+.entry-categories a {
+	color: $primary !important;
+}
