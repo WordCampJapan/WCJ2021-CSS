@@ -1,521 +1,459 @@
 $top_padding: 26px;
 
-$breakpoints: (
-	'sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
+$breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
 	'pc': 'screen and (max-width: 767px)', //一般PC ブレイクポイント
-    'wide': 'screen and (min-width: 1440px)' //幅大モニター
+	'wide': 'screen and (min-width: 1440px)' //幅大モニター
 ) !default;
 
 @mixin mq($breakpoint: pc) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
-    }
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
 }
 
 $key_height: 660px;
-$wide_keyheight: calc( 100vw / 1440 * 660 );
+$wide_keyheight: calc(100vw / 1440 * 660);
 $sp_keyheight: 600px;
 
-$page_headerheight: 300px;
+// $page_headerheight: 300px;
+$page_headerheight: calc(100vw / 1200 * 300);
 
 
-    body{//.homeにすればトップページに反映される
+body {
+	//.homeトップページ
+	&.home,
+	&.page-id-1145 {
+		#site-header {
+			background-color: transparent;
+			background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual@2x.png) no-repeat center top;
+			background-size: cover;
+			@include mq('wide') {
+				//height: 100vh;
+				// background-size: contain;
+			}
+		}
+	}
 
-        &.custom-background{
+	//共通ヘッダースタイル
+	#site-header {
+		background-color: transparent;
+		background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual-under@2x.png) no-repeat center top;
+		background-size: cover;
+		min-height: $key_height;
+		position: relative;
+		padding-top: $top_padding;
+		margin-bottom: 20px;
+		@include mq() {
+			min-height: 600px;
+		}
+		@include mq('wide') {
+			height: $wide_keyheight;
+		}
+		.header-inner {
+			@include mq() {
+				width: 100%;
+				height: 100%;
+				max-width: 100%;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		.header-titles-wrapper {
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			@include mq() {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				top: 0;
+				left: 0;
+				transform: none;
+				.header-titles {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 90%;
+					.site-logo {
+						width: 100%;
+					}
+					.custom-logo {
+						width: 100%;
+					}
+				}
+				.mobile-nav-toggle {
+					position: absolute;
+					top: 0;
+					right: 0;
+					@include mq() {
+						height: 6.6rem;
+						background: url(https://japan.wordcamp.org/2021/files/2021/03/humberger@2x.png) no-repeat center/18px auto;
+						.toggle-inner {
+							display: none;
+						}
+						.toggle-text {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		// .site-logo {
+		// 	margin: 0;
+		// }
+		.custom-logo {
+			width: 570px;
+			max-height: none;
+			@include mq() {
+				width: 280px;
+			}
+		}
+	}
+	&:not(.enable-search-modal) .site-logo img {
+		margin: 0 auto;
+	}
+	//ホーム以外でヘッダーの高さ調整
+	&:not(.home):not(.page-id-1145) {
 
-            background-size: auto $key_height;
-            @include mq('wide'){
-                background-size: auto $wide_keyheight;
-            }
-            @include mq(){
-                background-size: auto $sp_keyheight;
-            }
-            
-        }
+		//最終.homeだけでOK
+		#site-header {
+			// min-height: $page_headerheight;
+			min-height: 300px;
+			height: $page_headerheight;
+			.header-titles-wrapper {
+				// top: 75%;
+				top: 65%;
 
-        //共通ヘッダースタイル
-        #site-header{
-        
-            background-color: transparent;
-            min-height: $key_height;
-            position: relative;
-            padding-top: $top_padding;
-            margin-bottom: 20px;
-            @include mq(){
-                min-height: 600px;
-            }
-            @include mq('wide'){
-                height: $wide_keyheight;
-            }
-        
-            .header-inner{
-                @include mq(){
-                    width: 100%;
-                    height: 100%;
-                    max-width: 100%;
-                    padding: 0;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-            }
-        
-            .header-titles-wrapper{
-        
-                position: absolute;
-                top: 55%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                margin: 0;
-                @include mq(){
-                    width: 100%;
-                    height: 100%;
-                    padding: 0;
-                    top: 0;
-                    left: 0;
-                    transform: none;
-        
-                    .header-titles{
-        
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate( -50%, -50% );
-                        width: 90%;
-                        .site-logo{
-                            width: 100%;
-                        }
-                        .custom-logo{
-                            width: 100%;
-                        }
-                    }
-        
-                    .mobile-nav-toggle{
-        
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        @include mq(){
-                            height: 6.6rem;
-                            background: url(https://japan.wordcamp.org/2021/files/2021/03/humberger@2x.png) no-repeat center/18px auto;
-                            .toggle-inner{
-                                display: none;
-                            }
-                            .toggle-text{
-                                display: none;
-                            }
-                        }
-                    }
-                }
-        
-            }
-        
-            .site-logo{
-        
-                margin: 0;
-            }
-        
-            .custom-logo{
-        
-                width: 570px;
-                max-height: none;
-                @include mq(){
-                    width: 280px;
-                }
-            }
-        
-        }
+				@include mq() {
+					top: 0;
+				}
+			}
+			.custom-logo {
+				width: 280px;
+			}
+		}
+	}
+	#site-content {
+		background-color: inherit;
+	}
 
-        //ホーム以外でヘッダーの高さ調整
-        &:not(.home),&:not(.page-id-1145){ //最終.homeだけでOK
-            #site-header{
+	//トップページスタイル
+	.entry-header {
+		padding: 0;
+	}
+	.post-inner {
+		padding-top: 0;
+	}
 
-                min-height: $page_headerheight;
-                height: $page_headerheight;
+	//ホーム共通コンテンツ
+	// &.home,
+	&.page-id-1145 {
+		//.homeに戻す
+		.text-news {
+			position: relative;
+			&::before {
+				content: 'NEWS';
+				color: $secondary;
+				font-size: 14px;
+				bottom: -12px;
+				left: 4.5em;
+				position: absolute;
 
-                .header-titles-wrapper{
+				@include mq() {
+					bottom: 12px;
+					left: 8em;
+				}
+			}
+		}
+		.latest-posts {
+			.wp-block-column {
+				@include mq() {
+					margin-bottom: 1rem;
+				}
+				&:nth-of-type(2) {
+					flex-basis: 90% !important;
+				}
+			}
+			.wp-block-latest-posts__list {
+				margin-top: 16px;
+				@include mq() {
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+		.wp-block-latest-posts.has-dates {
+			li {
+				display: flex;
+				flex-direction: column-reverse;
+				flex-wrap: wrap;
+				background: #FFFFFF;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+				padding: 16px;
+				a {
+					font-weight: 300;
+					color: #000;
+				}
+				.wp-block-latest-posts__post-date {
+					color: #000;
+				}
+			}
+		}
+		.text-schedule {
+			margin-top: 0 !important;
+			margin-bottom: 12px !important;
+			position: relative;
+			&::before {
+				content: 'Schedule';
+				color: $secondary;
+				font-size: 14px;
+				left: 11.5em;
+				bottom: 12px;
+				position: absolute;
+			}
+		}
+		.schedule {
+			position: relative;
+			&::before {
+				content: '';
+				display: block;
+				background-color: #C6C2B9;
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				z-index: 0;
+				right: calc(50vw - 40rem);
+				top: 50px;
 
-                    top: 75%;
-                    @include mq(){
-                        top: 0;
-                    }
+				@include mq() {
+					right: 0;
+				}
+			}
+			.wp-block-column {
+				&:nth-of-type(1) {
+					figure {
+						margin: 0 !important;
+						max-width: 40rem;
+					}
+				}
+				&:nth-of-type(2) {
+					z-index: 1;
+					background-color: #fff;
+					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+					padding: 16px 20px;
+					margin-bottom: auto;
+					ul {
+						margin: 0;
+					}
+					@include mq() {
+						margin: 0 calc(50% - 50vw);
+						width: 100vw;
+					}
+				}
+			}
+			ul {
+				list-style-type: none;
+				li {
+					margin-left: 8px;
+				}
+			}
+		}
 
-                }
+		.icon-menu {
+			font-weight: 700;
+			p {
+				white-space: nowrap;
+			}
+			@include mq() {
+				width: calc(100% - 30px) !important;
+				&>.wp-block-column {
+					&>.wp-block-columns {
+						margin-bottom: 0 !important;
+						&>.wp-block-column {
+							margin-bottom: 0 !important;
+							flex-basis: 50% !important;
+							&:first-of-type {
+								padding-right: 6px;
+							}
+							&:last-of-type {
+								padding-left: 6px;
+							}
+							&>.wp-block-image {
+								margin: 12px auto !important;
+							}
+						}
+					}
+				}
+			}
+		}
 
-                .custom-logo{
-                    width: 280px;
-                }
-    
-            }
-        }
+		@keyframes cloudHover {
+			0% {
+				transform: translateY(0)
+			}
+			25% {
+				transform: translateY(-8px)
+			}
+			50% {
+				transform: translateY(-5px)
+			}
+			75% {
+				transform: translateY(-10px)
+			}
+			100% {
+				transform: translateY(0)
+			}
+		}
 
-        #site-content{
-            background-color: inherit;
-        }
-        
-        //トップページスタイル
-        .entry-header{
-    
-            padding: 0;
-        }
-            
-        .post-inner{
-        
-            padding-top: 0;
-        }
+		.about-wc-wrap {
+			position: relative;
+			&.wp-block-cover::before {
+				background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud1__object.png) no-repeat left top / contain;
+				position: absolute;
+				top: -5%;
+				left: -15%;
+				content: '';
+				display: block;
+				width: 690px;
+				height: 210px;
+				opacity: 1 !important;
 
-        //ホーム共通コンテンツ
-        &.page-id-1145 { //.homeに戻す
+				animation: cloudHover 8s linear infinite;
+				transform-origin: 50% 50%;
 
-            .text-news{
-            
-                position: relative;
-            
-                &::before{
-                    content: 'NEWS';
-                    color: $secondary;
-                    font-size: 14px;
-                    bottom: -12px;
-                    left: 4.5em;
-                    position: absolute;
-                    @include mq(){
-                        bottom: 12px;
-                        left: 8em;
-                    }
-                }
-            
-            }
-            
-            .latest-posts{
-            
-                .wp-block-column{
-            
-                    @include mq(){
-                        margin-bottom: 1rem;
-                    }
-            
-                    &:nth-of-type(2){
-                        flex-basis: 90% !important;
-                    }
-                }
-            
-                .wp-block-latest-posts__list{
-                    margin-top: 16px;
-                    @include mq(){
-                        margin-bottom: 0 !important;
-                    }
-                }
-            
-            }
-            .wp-block-latest-posts.has-dates{
-            
-                li{
-            
-                    display: flex;
-                    flex-direction: column-reverse;
-                    flex-wrap: wrap;
-                    background: #FFFFFF;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                    padding: 16px;
-            
-                    a{
-            
-                        font-weight: 300;
-                        color: #000;
-            
-                    }
-            
-                    .wp-block-latest-posts__post-date{
-            
-                        color: #000;
-                    }
-            
-                }
-            }
-            
-            .text-schedule{
-            
-                margin-top: 0 !important;
-                margin-bottom: 12px !important;
-                position: relative;
-                &::before{
-                    content: 'Schedule';
-                    color: $secondary;
-                    font-size: 14px;
-                    left: 11.5em;
-                    bottom: 12px;
-                    position: absolute;
-                }
-            
-            }
-            .schedule{
-            
-                position: relative;
-            
-                &::before{
-            
-                    content: '';
-                    display: block;
-                    background-color: #C6C2B9;
-                    width: 100%;
-                    height: 200px;
-                    position: absolute;
-                    z-index: 0;
-                    right: calc( 50vw - 40rem );
-                    top: 50px;
-                    @include mq(){
-                        right: 0;
-                    }
-            
-                }
-            
-                .wp-block-column{
-            
-                    &:nth-of-type(1){
-            
-                        figure{
-                            margin: 0 !important;
-                            max-width: 40rem;
-                        }
-                    }
-            
-                    &:nth-of-type(2){
-            
-                        z-index: 1;
-                        background-color: #fff;
-                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                        padding: 16px 20px;
-                        margin-bottom: auto;
-            
-                        ul{
-                            margin: 0;
-                        }
-                        @include mq(){
-                            margin: 0 calc(50% - 50vw);
-                            width: 100vw;
-                        }
-            
-                    }
-            
-                }
-            
-                ul{
-                    list-style-type: none;
-                    li{
-                        margin-left: 8px;
-                    }
-                }
-            }
-            
-            .icon-menu{
-            
-                font-weight: 700;
-            
-                p{
-            
-                    white-space: nowrap;
-            
-                }
-                @include mq(){
-            
-                    width: calc( 100% - 30px ) !important;
-            
-                    & > .wp-block-column{
-            
-                        & > .wp-block-columns{
-                            margin-bottom: 0 !important;
-                            & > .wp-block-column{
-                                margin-bottom: 0 !important;
-                                flex-basis: 50% !important;
-                                &:first-of-type{
-                                    padding-right: 6px;
-                                }
-                                &:last-of-type{
-                                    padding-left: 6px;
-                                }
-                                & > .wp-block-image{
-            
-                                    margin: 12px auto !important;
-            
-                                }
-                            }
-                        }
-            
-                    }
-            
-                }
-            
-            }
-            
-            @keyframes cloudHover{
-                0% { transform: translateY(0) }
-                25% { transform: translateY(-8px) }
-                50% { transform: translateY(-5px) }
-                75% { transform: translateY(-10px) }
-                100% { transform: translateY(0) }
-            }
-            
-            .about-wc-wrap{
-            
-                position: relative;
-            
-                &.wp-block-cover::before{
-                    background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud1__object.png) no-repeat left top / contain;
-                    position: absolute;
-                    top: -5%;
-                    left: -15%;
-                    content: '';
-                    display: block;
-                    width: 690px;
-                    height: 210px;
-                    opacity: 1 !important;
-            
-                    animation: cloudHover 8s linear infinite;
-                    transform-origin: 50% 50%;
-                    @include mq(){
-                        width: 400px;
-                        left: -45%;
-                        top: -1%;
-                    }
-                }
-            
-                &::after{
-                    background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud2__object.png) no-repeat right bottom / contain;
-                    position: absolute;
-                    bottom: -3%;
-                    right: -6%;
-                    content: '';
-                    display: block;
-                    width: 290px;
-                    height: 210px;
-            
-                    animation: cloudHover 8s linear 2s infinite;
-                    @include mq(){
-                        width: 205px;
-                        bottom: -5%;
-                        right: -20%;
-                    }
-                }
-                
-            }
-        
-            .wp-block-cover__inner-container{
-        
-                @include mq(){
-        
-                    width: 100%;
-                    padding-top: 0;
-                    .about-wc{
-                        padding: 0;
-                    }
-                    .wp-block-image{
-                        margin-bottom: 0 !important;
-                        figure{
-                            margin: 0 auto;
-                        }
-                    }
-                }
-            }
-        
-            .about-wc{
-            
-                max-width: 80rem !important;
-                align-items: center;
-            
-                h3{
-                    border-bottom: none !important;
-                    font-size: 24px;
-                    line-height: 1.5;
-                }
-            
-            }
+				@include mq() {
+					width: 400px;
+					left: -45%;
+					top: -1%;
+				}
+			}
 
-        }
-        
-            
-    }
+			&::after {
+				background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud2__object.png) no-repeat right bottom / contain;
+				position: absolute;
+				bottom: -3%;
+				right: -6%;
+				content: '';
+				display: block;
+				width: 290px;
+				height: 210px;
+
+				animation: cloudHover 8s linear 2s infinite;
+
+				@include mq() {
+					width: 205px;
+					bottom: -5%;
+					right: -20%;
+				}
+			}
+
+		}
+
+		.wp-block-cover__inner-container {
+
+			@include mq() {
+				width: 100%;
+				padding-top: 0;
+
+				.about-wc {
+					padding: 0;
+				}
+
+				.wp-block-image {
+					margin-bottom: 0 !important;
+
+					figure {
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+
+		.about-wc {
+			max-width: 80rem !important;
+			align-items: center;
+
+			h3 {
+				border-bottom: none !important;
+				font-size: 24px;
+				line-height: 1.5;
+			}
+		}
+	}
+}
 
 //メニュー
-.primary-menu-wrapper{
-    
-    ul.primary-menu{
+.primary-menu-wrapper {
+	ul.primary-menu {
+		flex-wrap: nowrap;
 
-        flex-wrap: nowrap;
-        @include mq('wide'){
-            flex-wrap: nowrap;
-        }
-            
-        a{
-    
-            font-size: 16px;
-            color: #000 !important;
-            text-decoration: none;
-            white-space: none;
-    
-        }
-    
-        .icon{
-    
-            &:before,&:after{
-                background-color: #000;
-            }
-        }
+		@include mq('wide') {
+			flex-wrap: nowrap;
+		}
 
-        & > li{
-            white-space: nowrap;
-        }
-    
-        li.menu-item-has-children:hover{
-    
-            & > .sub-menu{
-    
-                background-color: #EBEEF3;
-    
-                &::after{
-                    display: none;
-                }
-    
-            }
-    
-        }
-    
-    }
+		a {
+			font-size: 16px;
+			color: #000 !important;
+			text-decoration: none;
+			white-space: none;
+		}
 
+		.icon {
+			&:before,
+			&:after {
+				background-color: #000;
+			}
+		}
+
+		&>li {
+			white-space: nowrap;
+		}
+
+		li.menu-item-has-children:hover {
+			&>.sub-menu {
+				background-color: #EBEEF3;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 //スマホのモーダルメニュー
-@include mq(){
+@include mq() {
 
-    .menu-modal{
-    
-        z-index: 150;
+	.menu-modal {
+		z-index: 150;
 
-        .toggle-text{
-            display: none;
-        }
+		.toggle-text {
+			display: none;
+		}
 
-        .close-nav-toggle{
-            padding: 1.5rem 0;
-        }
-    
-    }
+		.close-nav-toggle {
+			padding: 1.5rem 0;
+		}
 
-    button{
-        &:active,&:focus{
-            outline: none;
-        }
-    }
+	}
 
-    .mobile-menu{
+	button {
+		&:active,
+		&:focus {
+			outline: none;
+		}
+	}
 
-        a{
-
-            color: #333;
-            text-decoration: none;
-            font-size: 16px !important;
-            padding: 1.5rem;
-            font-weight: 300 !important;
-        }
-    }
-
+	.mobile-menu {
+		a {
+			color: #333;
+			text-decoration: none;
+			font-size: 16px !important;
+			padding: 1.5rem;
+			font-weight: 300 !important;
+		}
+	}
 }
