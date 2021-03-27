@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+#site-content {
+	h2 {
+		letter-spacing: normal;
+		&:after {
+			background: URL('https://japan.wordcamp.org/2021/files/2021/03/bg-h2.png') no-repeat 0 0;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 20px;
+			width: 137px;
+			margin-top: -12px;
+		}
+	}
+	h3 {
+		border-bottom: 2px solid  $secondary;
+	}
+}
+
+// スマホでロゴが見えるように （ティザー）
+@media ( max-width: 599px ) {
+	.cover-header.bg-image.bg-attachment-fixed {
+		background-size: 852px auto;
+		background-position: 53% 0;
+	}
+	.cover-header-inner-wrapper.screen-height {
+		min-height: 58vh;
+	}
+}
+table,
+.roadmap-table {
+	* {
+		border-color: #c6c2b9;
+	}
+	th {
+		background-color: $primary;
+		color: $alt;
+		text-align: center;
+		letter-spacing:1em;
+	}
+}
+
+// グローバルナビ
+.header-navigation-wrapper {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+ul.primary-menu {
+	background: #fff;
+	border-radius: 5rem;
+	box-shadow: 0 0px 2px #999;
+	justify-content: center;
+	min-width: max-content;
+	padding: 2rem 3rem;
+	> li {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+ul.primary-menu ul {
+	background: #f1f1f1 !important;
+	left: calc(-10rem + 50%) !important;
+}
+
+ul.primary-menu ul::after {
+	border-bottom-color: #f1f1f1!important;
+	width: 1.5rem;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+// スマホメニューが白文字で見えないのを修正
+nav.mobile-menu a {
+	color: $text;
+}
+
+// カバーテンプレート上部の余白を削除
+.page-template-template-cover,
+.post-template-template-cover {
+	#site-content {
+		padding-top: 0;
+	}
+}
+
+// アイキャッチ画像がないページのタイトルをコンテンツ幅に揃える
+.page-id-21,
+.page-id-442,
+.page-id-545 {
+	.entry-header-inner.section-inner.medium {
+		max-width: 80rem;
+	}
+}
