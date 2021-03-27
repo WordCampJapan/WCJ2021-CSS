@@ -287,24 +287,16 @@ input[type="submit"],
 	word-break: normal;
 }
 
-body.custom-background {
-	background-size: auto 660px;
-}
-
-@media screen and (min-width: 1440px) {
-	body.custom-background {
-		background-size: auto calc( 100vw / 1440 * 660);
-	}
-}
-
-@media screen and (max-width: 767px) {
-	body.custom-background {
-		background-size: auto 600px;
-	}
+body.home #site-header, body.page-id-1145 #site-header {
+	background-color: transparent;
+	background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual@2x.png) no-repeat center top;
+	background-size: cover;
 }
 
 body #site-header {
 	background-color: transparent;
+	background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual-under@2x.png) no-repeat center top;
+	background-size: cover;
 	min-height: 660px;
 	position: relative;
 	padding-top: 26px;
@@ -319,7 +311,7 @@ body #site-header {
 
 @media screen and (min-width: 1440px) {
 	body #site-header {
-		height: calc( 100vw / 1440 * 660);
+		height: calc(100vw / 1440 * 660);
 	}
 }
 
@@ -385,10 +377,6 @@ body #site-header .header-titles-wrapper {
 	}
 }
 
-body #site-header .site-logo {
-	margin: 0;
-}
-
 body #site-header .custom-logo {
 	width: 570px;
 	max-height: none;
@@ -400,22 +388,26 @@ body #site-header .custom-logo {
 	}
 }
 
-body:not(.home) #site-header, body:not(.page-id-1145) #site-header {
-	min-height: 300px;
-	height: 300px;
+body:not(.enable-search-modal) .site-logo img {
+	margin: 0 auto;
 }
 
-body:not(.home) #site-header .header-titles-wrapper, body:not(.page-id-1145) #site-header .header-titles-wrapper {
-	top: 75%;
+body:not(.home):not(.page-id-1145) #site-header {
+	min-height: 300px;
+	height: calc(100vw / 1200 * 300);
+}
+
+body:not(.home):not(.page-id-1145) #site-header .header-titles-wrapper {
+	top: 65%;
 }
 
 @media screen and (max-width: 767px) {
-	body:not(.home) #site-header .header-titles-wrapper, body:not(.page-id-1145) #site-header .header-titles-wrapper {
+	body:not(.home):not(.page-id-1145) #site-header .header-titles-wrapper {
 		top: 0;
 	}
 }
 
-body:not(.home) #site-header .custom-logo, body:not(.page-id-1145) #site-header .custom-logo {
+body:not(.home):not(.page-id-1145) #site-header .custom-logo {
 	width: 280px;
 }
 
@@ -516,7 +508,7 @@ body.page-id-1145 .schedule::before {
 	height: 200px;
 	position: absolute;
 	z-index: 0;
-	right: calc( 50vw - 40rem);
+	right: calc(50vw - 40rem);
 	top: 50px;
 }
 
@@ -568,7 +560,7 @@ body.page-id-1145 .icon-menu p {
 
 @media screen and (max-width: 767px) {
 	body.page-id-1145 .icon-menu {
-		width: calc( 100% - 30px) !important;
+		width: calc(100% - 30px) !important;
 	}
 	body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns {
 		margin-bottom: 0 !important;
@@ -731,5 +723,79 @@ body.page-id-1145 .about-wc h3 {
 		font-size: 16px !important;
 		padding: 1.5rem;
 		font-weight: 300 !important;
+	}
+}
+
+a.to-the-top {
+	background: url(https://japan.wordcamp.org/2021/files/2021/03/image1.png) no-repeat 100% 100%;
+	background-size: contain;
+	transform: translateX(0) translateY(0) rotate(5deg);
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+	text-indent: -1000vw;
+	height: 108px;
+	width: 140px;
+	z-index: 10000;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: float-img;
+}
+
+@media (min-width: 768px) {
+	a.to-the-top {
+		height: 162px;
+		width: 192px;
+	}
+}
+
+@media (min-width: 992px) {
+	a.to-the-top {
+		height: 190px;
+		width: 226px;
+	}
+}
+
+@media (min-width: 1280px) {
+	a.to-the-top {
+		height: 236px;
+		width: 280px;
+	}
+}
+
+a.to-the-top:hover {
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+	animation-name: float-img-hover;
+}
+
+@keyframes float-img-hover {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px) scale(1.02);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes float-img {
+	0% {
+		transform: translateX(0) translateY(0) rotate(5deg);
+	}
+	50% {
+		transform: translateY(5px) rotate(-10deg);
+	}
+	100% {
+		transform: translateX(0) translateY(0) rotate(5deg);
 	}
 }
