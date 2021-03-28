@@ -12,7 +12,7 @@ $breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン �
 }
 
 $key_height: 660px;
-$wide_keyheight: calc(100vw / 1440 * 660);
+$wide_keyheight: calc(100vw / 1440 * 700);
 $sp_keyheight: 600px;
 
 // $page_headerheight: 300px;
@@ -151,7 +151,7 @@ body {
 	}
 
 	//ホーム共通コンテンツ
-	// &.home,
+	&.home,
 	&.page-id-1145 {
 		//.homeに戻す
 		.text-news {
@@ -246,6 +246,7 @@ body {
 					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 					padding: 16px 20px;
 					margin-bottom: auto;
+					margin-right: calc(100% - 100vw);
 					ul {
 						margin: 0;
 					}
@@ -267,6 +268,11 @@ body {
 			font-weight: 700;
 			p {
 				white-space: nowrap;
+			}
+			// リンク未設定の間
+			img {
+				mix-blend-mode: luminosity;
+				opacity: .5;
 			}
 			@include mq() {
 				width: calc(100% - 30px) !important;
