@@ -17,11 +17,11 @@
 	}
 	h3 {
 		border-bottom: 2px solid  $secondary;
+		padding-bottom: .2em;
 	}
 	// 実行委員一覧
 	.wordcamp-organizers {
 		h3 {
-			padding-bottom: .2em;
 			margin: 4rem auto 2rem;
 		}
 	}
@@ -110,4 +110,9 @@ nav.mobile-menu a {
 	.entry-header-inner.section-inner.medium {
 		max-width: 80rem;
 	}
+}
+
+// アイキャッチ下の余白
+.singular .featured-media {
+	margin-bottom: 1.5em;
 }
