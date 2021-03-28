@@ -6,10 +6,10 @@
 a.to-the-top {
 	background: url(https://japan.wordcamp.org/2021/files/2021/03/image1.png) no-repeat 100% 100%;
 	background-size: contain;
-	transform: translateX(0) translateY(0) rotate(5deg);
+	// transform: translateX(0) translateY(0) rotate(5deg);
 	position: fixed;
 	right: 1em;
-	bottom: 1em;
+	bottom: 1.5em;
 	text-indent: -1000vw;
 	height: 108px;
 	width: 140px;
@@ -17,9 +17,9 @@ a.to-the-top {
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
-	animation-duration: 8s;
+	animation-duration: 10s;
 	animation-timing-function: ease-in-out;
-	animation-delay: 0.5s;
+	// animation-delay: 0.5s;
 	animation-iteration-count: infinite;
 	animation-name: float-img;
 	@media (min-width: 768px) {
@@ -56,14 +56,14 @@ a.to-the-top {
 }
 @keyframes float-img {
 	0% {
-		transform: translateX(0) translateY(0) rotate(5deg);
+		transform: translateX(0) translateY(0) rotate(0);
 	}
 	
 	50% {
-		transform: translateY(5px) rotate(-10deg);
+		transform: translateY(5px) translateY(-4px) rotate(-15deg);
 	}
 	
 	100% {
-		transform: translateX(0) translateY(0) rotate(5deg);
+		transform: translateX(0) translateY(0) rotate(0);
 	}
 }
