@@ -1082,6 +1082,19 @@ body.page-id-1145 .about-wc h3 {
 	border-bottom: 2px solid #db6b31;
 }
 
+#site-content .wordcamp-organizers h3 {
+	padding-bottom: .2em;
+	margin: 4rem auto 2rem;
+}
+
+.wordcamp-image__avatar-container.align-center img {
+	border-radius: 50%;
+}
+
+ul.wp-block-social-links {
+	justify-content: center;
+}
+
 @media (max-width: 599px) {
 	.cover-header.bg-image.bg-attachment-fixed {
 		background-size: 852px auto;

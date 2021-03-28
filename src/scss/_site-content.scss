@@ -18,6 +18,22 @@
 	h3 {
 		border-bottom: 2px solid  $secondary;
 	}
+	// 実行委員一覧
+	.wordcamp-organizers {
+		h3 {
+			padding-bottom: .2em;
+			margin: 4rem auto 2rem;
+		}
+	}
+}
+
+// 実行委員一覧のプロフ画像
+.wordcamp-image__avatar-container.align-center img {
+	border-radius: 50%;
+}
+// SNSアイコン
+ul.wp-block-social-links {
+	justify-content: center;
 }
 
 // スマホでロゴが見えるように （ティザー）
