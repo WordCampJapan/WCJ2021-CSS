@@ -12,146 +12,16 @@ $breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン �
 }
 
 $key_height: 660px;
-$wide_keyheight: calc(100vw / 1440 * 660);
+$wide_keyheight: calc(100vw / 1440 * 700);
 $sp_keyheight: 600px;
 
 // $page_headerheight: 300px;
 $page_headerheight: calc(100vw / 1200 * 300);
 
-
 body {
-	//.homeトップページ
-	&.home,
-	&.page-id-1145 {
-		#site-header {
-			background-color: transparent;
-			background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual@2x.png) no-repeat center top;
-			background-size: cover;
-			@include mq('wide') {
-				//height: 100vh;
-				// background-size: contain;
-			}
-		}
-	}
-
-	//共通ヘッダースタイル
-	#site-header {
-		background-color: transparent;
-		background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual-under@2x.png) no-repeat center top;
-		background-size: cover;
-		min-height: $key_height;
-		position: relative;
-		padding-top: $top_padding;
-		margin-bottom: 20px;
-		@include mq() {
-			min-height: 600px;
-		}
-		@include mq('wide') {
-			height: $wide_keyheight;
-		}
-		.header-inner {
-			@include mq() {
-				width: 100%;
-				height: 100%;
-				max-width: 100%;
-				padding: 0;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-		}
-		.header-titles-wrapper {
-			position: absolute;
-			top: 55%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			margin: 0;
-			@include mq() {
-				width: 100%;
-				height: 100%;
-				padding: 0;
-				top: 0;
-				left: 0;
-				transform: none;
-				.header-titles {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 90%;
-					.site-logo {
-						width: 100%;
-					}
-					.custom-logo {
-						width: 100%;
-					}
-				}
-				.mobile-nav-toggle {
-					position: absolute;
-					top: 0;
-					right: 0;
-					@include mq() {
-						height: 6.6rem;
-						background: url(https://japan.wordcamp.org/2021/files/2021/03/humberger@2x.png) no-repeat center/18px auto;
-						.toggle-inner {
-							display: none;
-						}
-						.toggle-text {
-							display: none;
-						}
-					}
-				}
-			}
-		}
-		// .site-logo {
-		// 	margin: 0;
-		// }
-		.custom-logo {
-			width: 570px;
-			max-height: none;
-			@include mq() {
-				width: 280px;
-			}
-		}
-	}
-	&:not(.enable-search-modal) .site-logo img {
-		margin: 0 auto;
-	}
-	//ホーム以外でヘッダーの高さ調整
-	&:not(.home):not(.page-id-1145) {
-
-		//最終.homeだけでOK
-		#site-header {
-			// min-height: $page_headerheight;
-			min-height: 300px;
-			height: $page_headerheight;
-			.header-titles-wrapper {
-				// top: 75%;
-				top: 65%;
-
-				@include mq() {
-					top: 0;
-				}
-			}
-			.custom-logo {
-				width: 280px;
-			}
-		}
-	}
-	#site-content {
-		background-color: inherit;
-	}
-
-	//トップページスタイル
-	.entry-header {
-		padding: 0;
-	}
-	.post-inner {
-		padding-top: 0;
-	}
-
 	//ホーム共通コンテンツ
 	// &.home,
+	&.page-id-599,
 	&.page-id-1145 {
 		//.homeに戻す
 		.text-news {
@@ -246,6 +116,7 @@ body {
 					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 					padding: 16px 20px;
 					margin-bottom: auto;
+					margin-right: calc(100% - 100vw);
 					ul {
 						margin: 0;
 					}
@@ -267,6 +138,11 @@ body {
 			font-weight: 700;
 			p {
 				white-space: nowrap;
+			}
+			// リンク未設定の間
+			img {
+				mix-blend-mode: luminosity;
+				opacity: .5;
 			}
 			@include mq() {
 				width: calc(100% - 30px) !important;
@@ -382,78 +258,6 @@ body {
 				font-size: 24px;
 				line-height: 1.5;
 			}
-		}
-	}
-}
-
-//メニュー
-.primary-menu-wrapper {
-	ul.primary-menu {
-		flex-wrap: nowrap;
-
-		@include mq('wide') {
-			flex-wrap: nowrap;
-		}
-
-		a {
-			font-size: 16px;
-			color: #000 !important;
-			text-decoration: none;
-			white-space: none;
-		}
-
-		.icon {
-			&:before,
-			&:after {
-				background-color: #000;
-			}
-		}
-
-		&>li {
-			white-space: nowrap;
-		}
-
-		li.menu-item-has-children:hover {
-			&>.sub-menu {
-				background-color: #EBEEF3;
-				&::after {
-					display: none;
-				}
-			}
-		}
-	}
-}
-
-//スマホのモーダルメニュー
-@include mq() {
-
-	.menu-modal {
-		z-index: 150;
-
-		.toggle-text {
-			display: none;
-		}
-
-		.close-nav-toggle {
-			padding: 1.5rem 0;
-		}
-
-	}
-
-	button {
-		&:active,
-		&:focus {
-			outline: none;
-		}
-	}
-
-	.mobile-menu {
-		a {
-			color: #333;
-			text-decoration: none;
-			font-size: 16px !important;
-			padding: 1.5rem;
-			font-weight: 300 !important;
 		}
 	}
 }

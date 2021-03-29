@@ -75,7 +75,6 @@ button,
 }
 
 .entry-content {
-
 	h1,
 	h2,
 	h3,
@@ -93,9 +92,7 @@ button,
 }
 
 @supports (font-variation-settings: normal) {
-
 	.entry-content {
-
 		h1,
 		h2,
 		h3,
@@ -116,31 +113,37 @@ button,
 h1,
 .heading-size-1 {
 	font-size: 3.2rem;
+	letter-spacing: normal;
 }
 
 h2,
 .heading-size-2 {
 	font-size: 2.4rem;
+	letter-spacing: normal;
 }
 
 h3,
 .heading-size-3 {
 	font-size: 2.0rem;
+	letter-spacing: normal;
 }
 
 h4,
 .heading-size-4 {
 	font-size: 1.8rem;
+	letter-spacing: normal;
 }
 
 h5,
 .heading-size-5 {
 	font-size: 1.6rem;
+	letter-spacing: normal;
 }
 
 h6,
 .heading-size-6 {
-	font-size: 1rem;
+	font-size: 1.4rem;
+	letter-spacing: normal;
 }
 
 html[lang="ja"] h1.entry-title,
@@ -150,7 +153,6 @@ html[lang="ja"] h2.entry-title {
 }
 
 @media (min-width: 700px) {
-
 	html[lang="ja"] h1.entry-title,
 	html[lang="ja"] h2.entry-title {
 		font-size: 3.2rem;
@@ -158,8 +160,9 @@ html[lang="ja"] h2.entry-title {
 }
 
 @media (min-width: 1220px) {
-
-	html[lang="ja"] h1.entry-title,
+	html[lang="ja"] h1.entry-title {
+		font-size: 5.4rem; //3.2rem;
+	}
 	html[lang="ja"] h2.entry-title {
 		font-size: 3.2rem;
 	}
@@ -173,6 +176,12 @@ html[lang="ja"] .widget .widget-title {
 	html[lang="ja"] .widget .widget-title {
 		font-size: 2.4rem;
 	}
+}
+
+p,
+ol,
+ul {
+	font-size: 1.8rem;
 }
 
 p {
@@ -200,7 +209,6 @@ button,
 }
 
 @supports (font-variation-settings: normal) {
-
 	input,
 	textarea,
 	button,
@@ -281,4 +289,8 @@ input[type="submit"],
 .primary-menu a,
 .entry-categories a {
 	color: $primary !important;
+}
+
+.section-inner.medium {
+	max-width: 120rem;
 }
