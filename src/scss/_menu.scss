@@ -1,0 +1,72 @@
+@charset "UTF-8";
+//メニュー
+.primary-menu-wrapper {
+	ul.primary-menu {
+		flex-wrap: nowrap;
+
+		@include mq('wide') {
+			flex-wrap: nowrap;
+		}
+
+		a {
+			font-size: 16px;
+			color: #000 !important;
+			text-decoration: none;
+			white-space: none;
+		}
+
+		.icon {
+			&:before,
+			&:after {
+				background-color: #000;
+			}
+		}
+
+		&>li {
+			white-space: nowrap;
+		}
+
+		li.menu-item-has-children:hover {
+			&>.sub-menu {
+				background-color: #EBEEF3;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//スマホのモーダルメニュー
+@include mq() {
+
+	.menu-modal {
+		z-index: 150;
+
+		.toggle-text {
+			display: none;
+		}
+
+		.close-nav-toggle {
+			padding: 1.5rem 0;
+		}
+
+	}
+
+	button {
+		&:active,
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.mobile-menu {
+		a {
+			color: #333;
+			text-decoration: none;
+			font-size: 16px !important;
+			padding: 1.5rem;
+			font-weight: 300 !important;
+		}
+	}
+}

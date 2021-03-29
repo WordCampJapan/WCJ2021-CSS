@@ -1,0 +1,152 @@
+$top_padding: 26px;
+
+$breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
+	'pc': 'screen and (max-width: 767px)', //一般PC ブレイクポイント
+	'wide': 'screen and (min-width: 1440px)' //幅大モニター
+) !default;
+
+@mixin mq($breakpoint: pc) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+$key_height: 660px;
+$wide_keyheight: calc(100vw / 1440 * 700);
+$sp_keyheight: 600px;
+
+// $page_headerheight: 300px;
+$page_headerheight: calc(100vw / 1200 * 300);
+
+
+body {
+	//.homeトップページ
+	&.home,
+	&.page-id-1145 {
+		#site-header {
+			background-color: transparent;
+			background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual@2x.png) no-repeat center top;
+			background-size: cover;
+			@include mq('wide') {
+				//height: 100vh;
+				// background-size: contain;
+			}
+		}
+	}
+
+	//共通ヘッダースタイル
+	#site-header {
+		background-color: transparent;
+		background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual-under@2x.png) no-repeat center top;
+		background-size: cover;
+		min-height: $key_height;
+		position: relative;
+		padding-top: $top_padding;
+		margin-bottom: 20px;
+		@include mq() {
+			min-height: 600px;
+		}
+		@include mq('wide') {
+			height: $wide_keyheight;
+		}
+		.header-inner {
+			@include mq() {
+				width: 100%;
+				height: 100%;
+				max-width: 100%;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		.header-titles-wrapper {
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0;
+			@include mq() {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				top: 0;
+				left: 0;
+				transform: none;
+				.header-titles {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 90%;
+					.site-logo {
+						width: 100%;
+					}
+					.custom-logo {
+						width: 100%;
+					}
+				}
+				.mobile-nav-toggle {
+					position: absolute;
+					top: 0;
+					right: 0;
+					@include mq() {
+						height: 6.6rem;
+						background: url(https://japan.wordcamp.org/2021/files/2021/03/humberger@2x.png) no-repeat center/18px auto;
+						.toggle-inner {
+							display: none;
+						}
+						.toggle-text {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		// .site-logo {
+		// 	margin: 0;
+		// }
+		.custom-logo {
+			width: 570px;
+			max-height: none;
+			@include mq() {
+				width: 280px;
+			}
+		}
+	}
+	&:not(.enable-search-modal) .site-logo img {
+		margin: 0 auto;
+	}
+	//ホーム以外でヘッダーの高さ調整
+	&:not(.home):not(.page-id-1145) {
+
+		//最終.homeだけでOK
+		#site-header {
+			// min-height: $page_headerheight;
+			min-height: 300px;
+			height: $page_headerheight;
+			.header-titles-wrapper {
+				// top: 75%;
+				top: 65%;
+
+				@include mq() {
+					top: 0;
+				}
+			}
+			.custom-logo {
+				width: 280px;
+			}
+		}
+	}
+	#site-content {
+		background-color: inherit;
+	}
+
+	//トップページスタイル
+	.entry-header {
+		padding: 0;
+	}
+	.post-inner {
+		padding-top: 0;
+	}
+}
