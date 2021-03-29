@@ -2,7 +2,8 @@
 
 @import 'variables';
 
-
+body {
+	&.page-id-599{
 a.to-the-top {
 	background: url(https://japan.wordcamp.org/2021/files/2021/03/image1.png) no-repeat 100% 100%;
 	background-size: contain;
@@ -65,5 +66,8 @@ a.to-the-top {
 	
 	100% {
 		transform: translateX(0) translateY(0) rotate(0);
+	}
+}
+
 	}
 }
