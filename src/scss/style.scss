@@ -23,10 +23,16 @@
 	word-break: normal;
 }
 
+// @import 'main-visual';
+
 @import 'frontpage_upper';
 
-@import 'frontpage-bottom';
+@import 'top-event';
+
+@import 'top-sponsor';
 
 @import 'site-content';
+
+@import 'footer';
 
 @import 'to-the-top';
