@@ -1105,7 +1105,7 @@ a.to-the-top:hover {
 	height: 100%;
 	width: 100%;
 	z-index: 10000;
-	animation-duration: 10s;
+	animation-duration: 8s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-name: float-img;
@@ -1175,13 +1175,13 @@ a.to-the-top:hover {
 
 @keyframes float-img {
 	0% {
-		transform: translateX(0) translateY(0) rotate(0);
+		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(-5px) translateY(4px) rotate(10deg);
+		transform: translateY(-10px);
 	}
 	100% {
-		transform: translateX(0) translateY(0) rotate(0);
+		transform: translateY(0);
 	}
 }
 
