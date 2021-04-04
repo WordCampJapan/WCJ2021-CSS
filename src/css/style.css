@@ -289,6 +289,54 @@ input[type="submit"],
 	max-width: 120rem;
 }
 
+table *,
+.roadmap-table * {
+	border-color: #c6c2b9;
+}
+
+table th,
+.roadmap-table th {
+	background-color: #315bc2;
+	color: #fffdf8;
+	text-align: center;
+	letter-spacing: 1em;
+}
+
+tfoot tr {
+	border-top: 2px solid #c6c2b9;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background: #efeadf;
+}
+
+.wp-block-table.is-style-stripes td,
+.wp-block-table.is-style-stripes th {
+	border-color: #c6c2b9;
+}
+
+a.wp-block-button__link {
+	align-items: center;
+	background: #db6b31;
+	border-radius: 3em;
+	display: inline-flex;
+}
+
+a.wp-block-button__link:after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/btn-arrow@2x.png) no-repeat 0 0;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	height: 15px;
+	width: 8px;
+	margin-left: .5em;
+}
+
+.wp-block-button a.wp-block-button__link:hover {
+	background: #ff8e55;
+	text-decoration: none;
+}
+
 /* top のページタイトルを非表示 */
 .home h1.entry-title {
 	border: 0;
@@ -559,9 +607,6 @@ body.page-id-599 .about-wc h3, body.page-id-1145 .about-wc h3 {
 	line-height: 1.5;
 }
 
-/* 0325 taizo */
-/* top-bottom
----------------------------------------------- */
 /* top-event */
 .top-event-head {
 	z-index: 1;
@@ -580,52 +625,24 @@ body.page-id-599 .about-wc h3, body.page-id-1145 .about-wc h3 {
 	margin-bottom: 0.5rem;
 }
 
-.top-event.wp-block-group {
-	background: #315bc2;
-	color: #333;
-	border-radius: 30px;
-	padding: 2rem 6rem;
-}
-
-.top-event.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
-	position: relative;
-	margin-top: -28rem;
-	z-index: 2;
-}
-
-.top-event .top-event-inner {
-	background: #fff;
-	text-align: center;
-	margin-top: 0;
-	padding: 1rem 6rem 3rem;
-	max-width: 100% !important;
-}
-
-.top-event .wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
-	margin: 0;
-}
-
 .top-event [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
 .sponsors [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 100%;
-}
-
-.top-event .wp-block-image .aligncenter {
-	margin-bottom: 1rem;
-	margin-top: 3rem;
 }
 
 #site-content .top-event-title {
 	font-size: 3.8rem;
 	margin: 2rem auto 1.5rem;
 	border: 0;
+	text-align: center;
 }
 
-#site-content .top-event-leadtext {
+.top-event-leadtext {
 	font-size: 2.6rem;
 	margin: 0rem auto 3rem;
 	font-weight: normal;
 	border-bottom: 0;
+	text-align: center;
 }
 
 .top-event-leadtext::before, .top-event-leadtext::after {
@@ -645,6 +662,35 @@ body.page-id-599 .about-wc h3, body.page-id-1145 .about-wc h3 {
 .top-event-leadtext::after {
 	background: url("https://japan.wordcamp.org/2021/files/2021/03/line-r.png") no-repeat;
 	margin-left: 1rem;
+}
+
+.top-event.wp-block-group {
+	background: #315bc2;
+	color: #333;
+	border-radius: 30px;
+	padding: 2rem 6rem;
+}
+
+.top-event.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
+	position: relative;
+	margin-top: -28rem;
+	z-index: 2;
+}
+
+.top-event .top-event-inner {
+	background: #fff;
+	margin-top: 0;
+	padding: 1rem 6rem 3rem;
+	max-width: 100% !important;
+}
+
+.top-event .wp-block-image .aligncenter {
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+}
+
+.top-event .wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
+	margin: 0;
 }
 
 .top-event .bg-gray {
@@ -669,7 +715,6 @@ body.page-id-599 .about-wc h3, body.page-id-1145 .about-wc h3 {
 	padding: 1.1em 2.5em 1.1em 1.44em;
 }
 
-.top-event .wp-block-button
 .top-event .wp-block-button::after {
 	content: "";
 	width: 8px;
@@ -815,19 +860,6 @@ ul.wp-block-social-links {
 	.cover-header-inner-wrapper.screen-height {
 		min-height: 58vh;
 	}
-}
-
-table *,
-.roadmap-table * {
-	border-color: #c6c2b9;
-}
-
-table th,
-.roadmap-table th {
-	background-color: #315bc2;
-	color: #fffdf8;
-	text-align: center;
-	letter-spacing: 1em;
 }
 
 .header-navigation-wrapper {
@@ -1045,7 +1077,7 @@ a.to-the-top:hover {
 	}
 }
 
-#wapuu-test .to-top-wapuu {
+body.page-id-599 a.to-the-top {
 	position: fixed;
 	left: 10%;
 	top: 40%;
@@ -1056,20 +1088,20 @@ a.to-the-top:hover {
 }
 
 @media (min-width: 768px) {
-	#wapuu-test .to-top-wapuu {
+	body.page-id-599 a.to-the-top {
 		height: calc(836px * 0.20);
 		width: calc(1003px * 0.20);
 	}
 }
 
 @media (min-width: 992px) {
-	#wapuu-test .to-top-wapuu {
+	body.page-id-599 a.to-the-top {
 		height: calc(836px * 0.25);
 		width: calc(1003px * 0.25);
 	}
 }
 
-#wapuu-test .to-top-wapuu::before, #wapuu-test .to-top-wapuu::after {
+body.page-id-599 a.to-the-top::before, body.page-id-599 a.to-the-top::after {
 	content: '';
 	display: block;
 	height: 100%;
@@ -1080,42 +1112,42 @@ a.to-the-top:hover {
 	opacity: 0;
 }
 
-#wapuu-test .to-top-wapuu:before {
+body.page-id-599 a.to-the-top:before {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-spring.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-#wapuu-test .to-top-wapuu:after {
+body.page-id-599 a.to-the-top:after {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-summer.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-#wapuu-test .to-top-wapuu span {
+body.page-id-599 a.to-the-top > span {
 	text-indent: -1000vw;
 	text-align: center;
 	white-space: nowrap;
 }
 
-#wapuu-test .to-top-wapuu span:first-child {
+body.page-id-599 a.to-the-top > span:first-child {
 	background: url(https://japan.wordcamp.org/2021/files/2021/04/wapoo.png) no-repeat 0 0%;
 	background-size: contain;
 	display: block;
 	height: 100%;
 	width: 100%;
 	z-index: 10000;
-	animation-duration: 8s;
+	animation-duration: 6s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-name: float-img;
 }
 
-#wapuu-test .to-top-wapuu span:last-child {
+body.page-id-599 a.to-the-top > span:last-child {
 	display: block;
 }
 
-#wapuu-test .to-top-wapuu span:last-child::before, #wapuu-test .to-top-wapuu span:last-child::after {
+body.page-id-599 a.to-the-top > span:last-child::before, body.page-id-599 a.to-the-top > span:last-child::after {
 	content: '';
 	display: block;
 	height: 100%;
@@ -1126,47 +1158,47 @@ a.to-the-top:hover {
 	opacity: 0;
 }
 
-#wapuu-test .to-top-wapuu span:last-child:before {
+body.page-id-599 a.to-the-top > span:last-child:before {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-autumn.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-#wapuu-test .to-top-wapuu span:last-child:after {
+body.page-id-599 a.to-the-top > span:last-child:after {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-winter.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-#wapuu-test .to-top-wapuu:hover:before {
+body.page-id-599 a.to-the-top:hover:before {
 	animation-duration: 6s;
 	animation-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
 	animation-iteration-count: infinite;
 	animation-name: fade-in-4;
 }
 
-#wapuu-test .to-top-wapuu:hover:after {
+body.page-id-599 a.to-the-top:hover:after {
 	animation-duration: 6s;
 	animation-timing-function: cubic-bezier(0.47, 0, 0.75, 0.72);
 	animation-iteration-count: infinite;
 	animation-name: fade-in-3;
 }
 
-#wapuu-test .to-top-wapuu:hover span:first-child {
+body.page-id-599 a.to-the-top:hover > span:first-child {
 	animation-duration: 6s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
 	animation-name: hover-wapuu;
 }
 
-#wapuu-test .to-top-wapuu:hover span:last-child:before {
+body.page-id-599 a.to-the-top:hover > span:last-child:before {
 	animation-duration: 6s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
 	animation-name: fade-in-2;
 }
 
-#wapuu-test .to-top-wapuu:hover span:last-child:after {
+body.page-id-599 a.to-the-top:hover > span:last-child:after {
 	animation-duration: 6s;
 	animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	animation-iteration-count: infinite;

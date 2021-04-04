@@ -2,9 +2,6 @@
 
 @import 'variables';
 
-/* 0325 taizo */
-/* top-bottom
----------------------------------------------- */
 /* top-event */
 .top-event-head {
 	z-index: 1;
@@ -23,39 +20,9 @@
 	margin-bottom: 0.5rem;
 }
 
-.top-event.wp-block-group {
-	background: #315bc2;
-	color: #333;
-	border-radius: 30px;
-	padding: 2rem 6rem;
-
-	&:not(.has-background):not(.alignwide):not(.alignfull) {
-		position: relative;
-		margin-top: -28rem;
-		z-index: 2;
-	}
-}
-
-.top-event .top-event-inner {
-	background: #fff;
-	text-align: center;
-	margin-top: 0;
-	padding: 1rem 6rem 3rem;
-	max-width: 100% !important;
-}
-
-.top-event .wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
-	margin: 0;
-}
-
 .top-event [class*="__inner-container"]>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
 .sponsors [class*="__inner-container"]>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 100%;
-}
-
-.top-event .wp-block-image .aligncenter {
-	margin-bottom: 1rem;
-	margin-top: 3rem;
 }
 
 #site-content {
@@ -63,17 +30,16 @@
 		font-size: 3.8rem;
 		margin: 2rem auto 1.5rem;
 		border: 0;
-	}
-
-	.top-event-leadtext {
-		font-size: 2.6rem;
-		margin: 0rem auto 3rem;
-		font-weight: normal;
-		border-bottom: 0;
+		text-align: center;
 	}
 }
 
 .top-event-leadtext {
+	font-size: 2.6rem;
+	margin: 0rem auto 3rem;
+	font-weight: normal;
+	border-bottom: 0;
+	text-align: center;
 
 	&::before,
 	&::after {
@@ -97,6 +63,33 @@
 }
 
 .top-event {
+	&.wp-block-group {
+		background: $primary;// #315bc2;
+		color: #333;
+		border-radius: 30px;
+		padding: 2rem 6rem;
+
+		&:not(.has-background):not(.alignwide):not(.alignfull) {
+			position: relative;
+			margin-top: -28rem;
+			z-index: 2;
+		}
+	}
+	.top-event-inner {
+		background: #fff;
+		margin-top: 0;
+		padding: 1rem 6rem 3rem;
+		max-width: 100% !important;
+	}
+	.wp-block-image {
+		.aligncenter {
+			margin-bottom: 1rem;
+			margin-top: 3rem;
+		}
+		&:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
+			margin: 0;
+		}
+	}
 	.bg-gray {
 		background: #ececec;
 		margin-bottom: 3rem;
@@ -114,22 +107,19 @@
 	.wp-block-button {
 		margin-top: 1rem;
 		a {
-	padding: 1.1em 2.5em 1.1em 1.44em;
-}
+			padding: 1.1em 2.5em 1.1em 1.44em;
+		}
+		&::after {
+			content: "";
+			width: 8px;
+			height: 15px;
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			right: 30px;
+			background: url("https://japan.wordcamp.org/2021/files/2021/03/btn-right.png") no-repeat;
+		}
 	}
-}
-
-.top-event .wp-block-button 
-
-.top-event .wp-block-button::after {
-	content: "";
-	width: 8px;
-	height: 15px;
-	display: inline-block;
-	position: relative;
-	top: 2px;
-	right: 30px;
-	background: url("https://japan.wordcamp.org/2021/files/2021/03/btn-right.png") no-repeat;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,6 +1,10 @@
-#wapuu-test {
+@charset "UTF-8";
 
-	.to-top-wapuu {
+@import 'variables';
+
+body.page-id-599 {
+
+	a.to-the-top {
 		position: fixed;
 		left: 10%;
 		top: 40%;
@@ -38,7 +42,7 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
-		span {
+		> span {
 			text-indent: -1000vw;
 			text-align: center;
 			white-space: nowrap;
@@ -49,7 +53,7 @@
 				height: 100%;
 				width: 100%;
 				z-index: 10000;
-				animation-duration: 8s;
+				animation-duration: 6s;
 				animation-timing-function: ease-in-out;
 				animation-iteration-count: infinite;
 				animation-name: float-img;
@@ -92,7 +96,7 @@
 				animation-iteration-count: infinite;
 				animation-name: fade-in-3;
 			}
-			span {
+			> span {
 				&:first-child {
 					animation-duration: 6s;
 					animation-timing-function: ease-in;
