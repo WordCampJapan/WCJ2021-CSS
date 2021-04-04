@@ -1117,6 +1117,7 @@ body.page-id-599 a.to-the-top::before, body.page-id-599 a.to-the-top::after {
 	top: 0;
 	left: 0;
 	opacity: 0;
+	z-index: -1;
 }
 
 body.page-id-599 a.to-the-top:before {
@@ -1163,6 +1164,7 @@ body.page-id-599 a.to-the-top > span:last-child::before, body.page-id-599 a.to-t
 	top: 0;
 	left: 0;
 	opacity: 0;
+	z-index: -1;
 }
 
 body.page-id-599 a.to-the-top > span:last-child:before {
@@ -1229,10 +1231,10 @@ body.page-id-599 a.to-the-top:hover > span:last-child:after {
 		transform: translateX(0) translateY(0) rotate(0);
 	}
 	30% {
-		transform: translateX(-5px) translateY(30px) rotate(60deg);
+		transform: translateX(0) translateY(30px) rotate(60deg);
 	}
 	50% {
-		transform: translateY(5px) translateY(-5px) rotate(-10deg);
+		transform: translateX(10px) translateY(-5px) rotate(-10deg);
 	}
 	90% {
 		transform: translateX(0) translateY(10) rotate(0);
