@@ -294,3 +294,51 @@ input[type="submit"],
 .section-inner.medium {
 	max-width: 120rem;
 }
+
+table,
+.roadmap-table {
+	* {
+		border-color: #c6c2b9;
+	}
+	th {
+		background-color: $primary;
+		color: $alt;
+		text-align: center;
+		letter-spacing:1em;
+	}
+}
+
+tfoot tr {
+	border-top: 2px solid #c6c2b9;
+}
+
+.wp-block-table.is-style-stripes {
+	tbody tr:nth-child(odd) {
+		background: #efeadf;
+	}
+	td,
+	th {
+		border-color: #c6c2b9;
+	}
+}
+
+a.wp-block-button__link {
+	align-items: center;
+	background: $secondary;
+	border-radius: 3em;
+	display: inline-flex;
+	&:after {
+		background: url(https://japan.wordcamp.org/2021/files/2021/04/btn-arrow@2x.png) no-repeat 0 0;
+		background-size: contain;
+		content: '';
+		display: inline-block;
+		height: 15px;
+		width: 8px;
+		margin-left: .5em;
+	}
+}
+
+.wp-block-button a.wp-block-button__link:hover {
+    background: #ff8e55;
+    text-decoration: none;
+}
