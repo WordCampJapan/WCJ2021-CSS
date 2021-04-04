@@ -602,15 +602,15 @@ body.page-id-599 .about-wc, body.page-id-1145 .about-wc {
 }
 
 body.page-id-599 .about-wc a, body.page-id-1145 .about-wc a {
-	color: #fffdf8;
+	color: #fff;
 }
 
-body.page-id-599 .about-wc-title, body.page-id-1145 .about-wc-title {
+body.page-id-599 #site-content h2.about-wc-title, body.page-id-1145 #site-content h2.about-wc-title {
 	font-size: 24px;
 	line-height: 1.5;
 }
 
-body.page-id-599 .about-wc-title:after, body.page-id-1145 .about-wc-title:after {
+body.page-id-599 #site-content h2.about-wc-title:after, body.page-id-1145 #site-content h2.about-wc-title:after {
 	content: none;
 }
 
