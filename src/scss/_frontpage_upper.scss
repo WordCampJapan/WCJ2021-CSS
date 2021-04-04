@@ -253,10 +253,20 @@ body {
 			max-width: 80rem !important;
 			align-items: center;
 
-			h3 {
-				border-bottom: none !important;
-				font-size: 24px;
-				line-height: 1.5;
+			// h3 {
+			// 	border-bottom: none !important;
+			// 	font-size: 24px;
+			// 	line-height: 1.5;
+			// }
+			a {
+				color: $alt;
+			}
+		} 
+		.about-wc-title {
+			font-size: 24px;
+			line-height: 1.5;
+			&:after {
+				content: none;
 			}
 		}
 	}
