@@ -1005,44 +1005,6 @@ ul.wp-block-social-links {
 	}
 }
 
-.header-navigation-wrapper {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-ul.primary-menu {
-	background: #fff;
-	border-radius: 5rem;
-	box-shadow: 0 0px 2px #999;
-	justify-content: center;
-	min-width: -webkit-max-content;
-	min-width: max-content;
-	padding: 2rem 3rem;
-}
-
-ul.primary-menu > li {
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-ul.primary-menu ul {
-	background: #f1f1f1 !important;
-	left: calc(-10rem + 50%) !important;
-}
-
-ul.primary-menu ul::after {
-	border-bottom-color: #f1f1f1 !important;
-	width: 1.5rem;
-	right: 0;
-	left: 0;
-	margin: 0 auto;
-}
-
-nav.mobile-menu a {
-	color: #34302e;
-}
-
 .page-template-template-cover #site-content,
 .post-template-template-cover #site-content {
 	padding-top: 0;
@@ -1306,10 +1268,10 @@ a.to-the-top:hover > span:last-child:after {
 		transform: translateX(0) translateY(30px) rotate(60deg);
 	}
 	50% {
-		transform: translateX(10px) translateY(-8px) rotate(-10deg);
+		transform: translateX(10px) translateY(-8px) rotate(-370deg);
 	}
 	90% {
-		transform: translateX(0) translateY(0) rotate(0);
+		transform: translateX(0) translateY(0) rotate(-360deg);
 	}
 	100% {
 		transform: translateX(0) translateY(0) rotate(0);

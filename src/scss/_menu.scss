@@ -40,6 +40,40 @@
 	}
 }
 
+// グローバルナビ
+.header-navigation-wrapper {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+ul.primary-menu {
+	background: #fff;
+	border-radius: 5rem;
+	box-shadow: 0 0px 2px #999;
+	justify-content: center;
+	min-width: max-content;
+	padding: 2rem 3rem;
+	> li {
+		margin: 0 1em;
+	}
+	ul {
+		background: #f1f1f1 !important;
+		left: calc(-10rem + 50%) !important;
+		&::after {
+			border-bottom-color: #f1f1f1!important;
+			width: 1.5rem;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+// スマホメニューが白文字で見えないのを修正
+nav.mobile-menu a {
+	color: $text;
+}
+
 //スマホのモーダルメニュー
 @include mq() {
 
