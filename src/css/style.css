@@ -353,11 +353,11 @@ a.wp-block-button__link:after {
 	word-break: normal;
 }
 
-body.page-id-599 .text-news, body.page-id-1145 .text-news {
+body.home .text-news, body.page-id-599 .text-news, body.page-id-1145 .text-news {
 	position: relative;
 }
 
-body.page-id-599 .text-news::before, body.page-id-1145 .text-news::before {
+body.home .text-news::before, body.page-id-599 .text-news::before, body.page-id-1145 .text-news::before {
 	content: 'NEWS';
 	color: #db6b31;
 	font-size: 14px;
@@ -367,33 +367,33 @@ body.page-id-599 .text-news::before, body.page-id-1145 .text-news::before {
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .text-news::before, body.page-id-1145 .text-news::before {
+	body.home .text-news::before, body.page-id-599 .text-news::before, body.page-id-1145 .text-news::before {
 		bottom: 12px;
 		left: 8em;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .latest-posts .wp-block-column, body.page-id-1145 .latest-posts .wp-block-column {
+	body.home .latest-posts .wp-block-column, body.page-id-599 .latest-posts .wp-block-column, body.page-id-1145 .latest-posts .wp-block-column {
 		margin-bottom: 1rem;
 	}
 }
 
-body.page-id-599 .latest-posts .wp-block-column:nth-of-type(2), body.page-id-1145 .latest-posts .wp-block-column:nth-of-type(2) {
+body.home .latest-posts .wp-block-column:nth-of-type(2), body.page-id-599 .latest-posts .wp-block-column:nth-of-type(2), body.page-id-1145 .latest-posts .wp-block-column:nth-of-type(2) {
 	flex-basis: 90% !important;
 }
 
-body.page-id-599 .latest-posts .wp-block-latest-posts__list, body.page-id-1145 .latest-posts .wp-block-latest-posts__list {
+body.home .latest-posts .wp-block-latest-posts__list, body.page-id-599 .latest-posts .wp-block-latest-posts__list, body.page-id-1145 .latest-posts .wp-block-latest-posts__list {
 	margin-top: 16px;
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .latest-posts .wp-block-latest-posts__list, body.page-id-1145 .latest-posts .wp-block-latest-posts__list {
+	body.home .latest-posts .wp-block-latest-posts__list, body.page-id-599 .latest-posts .wp-block-latest-posts__list, body.page-id-1145 .latest-posts .wp-block-latest-posts__list {
 		margin-bottom: 0 !important;
 	}
 }
 
-body.page-id-599 .wp-block-latest-posts.has-dates li, body.page-id-1145 .wp-block-latest-posts.has-dates li {
+body.home .wp-block-latest-posts.has-dates li, body.page-id-599 .wp-block-latest-posts.has-dates li, body.page-id-1145 .wp-block-latest-posts.has-dates li {
 	display: flex;
 	flex-direction: column-reverse;
 	flex-wrap: wrap;
@@ -402,22 +402,22 @@ body.page-id-599 .wp-block-latest-posts.has-dates li, body.page-id-1145 .wp-bloc
 	padding: 16px;
 }
 
-body.page-id-599 .wp-block-latest-posts.has-dates li a, body.page-id-1145 .wp-block-latest-posts.has-dates li a {
+body.home .wp-block-latest-posts.has-dates li a, body.page-id-599 .wp-block-latest-posts.has-dates li a, body.page-id-1145 .wp-block-latest-posts.has-dates li a {
 	font-weight: 300;
 	color: #000;
 }
 
-body.page-id-599 .wp-block-latest-posts.has-dates li .wp-block-latest-posts__post-date, body.page-id-1145 .wp-block-latest-posts.has-dates li .wp-block-latest-posts__post-date {
+body.home .wp-block-latest-posts.has-dates li .wp-block-latest-posts__post-date, body.page-id-599 .wp-block-latest-posts.has-dates li .wp-block-latest-posts__post-date, body.page-id-1145 .wp-block-latest-posts.has-dates li .wp-block-latest-posts__post-date {
 	color: #000;
 }
 
-body.page-id-599 .text-schedule, body.page-id-1145 .text-schedule {
+body.home .text-schedule, body.page-id-599 .text-schedule, body.page-id-1145 .text-schedule {
 	margin-top: 0 !important;
 	margin-bottom: 12px !important;
 	position: relative;
 }
 
-body.page-id-599 .text-schedule::before, body.page-id-1145 .text-schedule::before {
+body.home .text-schedule::before, body.page-id-599 .text-schedule::before, body.page-id-1145 .text-schedule::before {
 	content: 'Schedule';
 	color: #db6b31;
 	font-size: 14px;
@@ -426,11 +426,11 @@ body.page-id-599 .text-schedule::before, body.page-id-1145 .text-schedule::befor
 	position: absolute;
 }
 
-body.page-id-599 .schedule, body.page-id-1145 .schedule {
+body.home .schedule, body.page-id-599 .schedule, body.page-id-1145 .schedule {
 	position: relative;
 }
 
-body.page-id-599 .schedule::before, body.page-id-1145 .schedule::before {
+body.home .schedule::before, body.page-id-599 .schedule::before, body.page-id-1145 .schedule::before {
 	content: '';
 	display: block;
 	background-color: #C6C2B9;
@@ -443,17 +443,17 @@ body.page-id-599 .schedule::before, body.page-id-1145 .schedule::before {
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .schedule::before, body.page-id-1145 .schedule::before {
+	body.home .schedule::before, body.page-id-599 .schedule::before, body.page-id-1145 .schedule::before {
 		right: 0;
 	}
 }
 
-body.page-id-599 .schedule .wp-block-column:nth-of-type(1) figure, body.page-id-1145 .schedule .wp-block-column:nth-of-type(1) figure {
+body.home .schedule .wp-block-column:nth-of-type(1) figure, body.page-id-599 .schedule .wp-block-column:nth-of-type(1) figure, body.page-id-1145 .schedule .wp-block-column:nth-of-type(1) figure {
 	margin: 0 !important;
 	max-width: 40rem;
 }
 
-body.page-id-599 .schedule .wp-block-column:nth-of-type(2), body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) {
+body.home .schedule .wp-block-column:nth-of-type(2), body.page-id-599 .schedule .wp-block-column:nth-of-type(2), body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) {
 	z-index: 1;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -462,56 +462,56 @@ body.page-id-599 .schedule .wp-block-column:nth-of-type(2), body.page-id-1145 .s
 	margin-right: calc(100% - 100vw);
 }
 
-body.page-id-599 .schedule .wp-block-column:nth-of-type(2) ul, body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) ul {
+body.home .schedule .wp-block-column:nth-of-type(2) ul, body.page-id-599 .schedule .wp-block-column:nth-of-type(2) ul, body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) ul {
 	margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .schedule .wp-block-column:nth-of-type(2), body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) {
+	body.home .schedule .wp-block-column:nth-of-type(2), body.page-id-599 .schedule .wp-block-column:nth-of-type(2), body.page-id-1145 .schedule .wp-block-column:nth-of-type(2) {
 		margin: 0 calc(50% - 50vw);
 		width: 100vw;
 	}
 }
 
-body.page-id-599 .schedule ul, body.page-id-1145 .schedule ul {
+body.home .schedule ul, body.page-id-599 .schedule ul, body.page-id-1145 .schedule ul {
 	list-style-type: none;
 }
 
-body.page-id-599 .schedule ul li, body.page-id-1145 .schedule ul li {
+body.home .schedule ul li, body.page-id-599 .schedule ul li, body.page-id-1145 .schedule ul li {
 	margin-left: 8px;
 }
 
-body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
+body.home .icon-menu, body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
 	font-weight: 700;
 }
 
-body.page-id-599 .icon-menu p, body.page-id-1145 .icon-menu p {
+body.home .icon-menu p, body.page-id-599 .icon-menu p, body.page-id-1145 .icon-menu p {
 	white-space: nowrap;
 }
 
-body.page-id-599 .icon-menu img, body.page-id-1145 .icon-menu img {
+body.home .icon-menu img, body.page-id-599 .icon-menu img, body.page-id-1145 .icon-menu img {
 	mix-blend-mode: luminosity;
 	opacity: .5;
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
+	body.home .icon-menu, body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
 		width: calc(100% - 30px) !important;
 	}
-	body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns {
+	body.home .icon-menu > .wp-block-column > .wp-block-columns, body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns {
 		margin-bottom: 0 !important;
 	}
-	body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column {
+	body.home .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column, body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column {
 		margin-bottom: 0 !important;
 		flex-basis: 50% !important;
 	}
-	body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:first-of-type, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:first-of-type {
+	body.home .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:first-of-type, body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:first-of-type, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:first-of-type {
 		padding-right: 6px;
 	}
-	body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:last-of-type, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:last-of-type {
+	body.home .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:last-of-type, body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:last-of-type, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column:last-of-type {
 		padding-left: 6px;
 	}
-	body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column > .wp-block-image, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column > .wp-block-image {
+	body.home .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column > .wp-block-image, body.page-id-599 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column > .wp-block-image, body.page-id-1145 .icon-menu > .wp-block-column > .wp-block-columns > .wp-block-column > .wp-block-image {
 		margin: 12px auto !important;
 	}
 }
@@ -534,11 +534,11 @@ body.page-id-599 .icon-menu img, body.page-id-1145 .icon-menu img {
 	}
 }
 
-body.page-id-599 .about-wc-wrap, body.page-id-1145 .about-wc-wrap {
+body.home .about-wc-wrap, body.page-id-599 .about-wc-wrap, body.page-id-1145 .about-wc-wrap {
 	position: relative;
 }
 
-body.page-id-599 .about-wc-wrap.wp-block-cover::before, body.page-id-1145 .about-wc-wrap.wp-block-cover::before {
+body.home .about-wc-wrap.wp-block-cover::before, body.page-id-599 .about-wc-wrap.wp-block-cover::before, body.page-id-1145 .about-wc-wrap.wp-block-cover::before {
 	background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud1__object.png) no-repeat left top/contain;
 	position: absolute;
 	top: -5%;
@@ -553,14 +553,14 @@ body.page-id-599 .about-wc-wrap.wp-block-cover::before, body.page-id-1145 .about
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .about-wc-wrap.wp-block-cover::before, body.page-id-1145 .about-wc-wrap.wp-block-cover::before {
+	body.home .about-wc-wrap.wp-block-cover::before, body.page-id-599 .about-wc-wrap.wp-block-cover::before, body.page-id-1145 .about-wc-wrap.wp-block-cover::before {
 		width: 400px;
 		left: -45%;
 		top: -1%;
 	}
 }
 
-body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after {
+body.home .about-wc-wrap::after, body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after {
 	background: url(https://japan.wordcamp.org/2021/files/2021/03/cloud2__object.png) no-repeat right bottom/contain;
 	position: absolute;
 	bottom: -3%;
@@ -573,7 +573,7 @@ body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after 
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after {
+	body.home .about-wc-wrap::after, body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after {
 		width: 205px;
 		bottom: -5%;
 		right: -20%;
@@ -581,36 +581,36 @@ body.page-id-599 .about-wc-wrap::after, body.page-id-1145 .about-wc-wrap::after 
 }
 
 @media screen and (max-width: 767px) {
-	body.page-id-599 .wp-block-cover__inner-container, body.page-id-1145 .wp-block-cover__inner-container {
+	body.home .wp-block-cover__inner-container, body.page-id-599 .wp-block-cover__inner-container, body.page-id-1145 .wp-block-cover__inner-container {
 		width: 100%;
 		padding-top: 0;
 	}
-	body.page-id-599 .wp-block-cover__inner-container .about-wc, body.page-id-1145 .wp-block-cover__inner-container .about-wc {
+	body.home .wp-block-cover__inner-container .about-wc, body.page-id-599 .wp-block-cover__inner-container .about-wc, body.page-id-1145 .wp-block-cover__inner-container .about-wc {
 		padding: 0;
 	}
-	body.page-id-599 .wp-block-cover__inner-container .wp-block-image, body.page-id-1145 .wp-block-cover__inner-container .wp-block-image {
+	body.home .wp-block-cover__inner-container .wp-block-image, body.page-id-599 .wp-block-cover__inner-container .wp-block-image, body.page-id-1145 .wp-block-cover__inner-container .wp-block-image {
 		margin-bottom: 0 !important;
 	}
-	body.page-id-599 .wp-block-cover__inner-container .wp-block-image figure, body.page-id-1145 .wp-block-cover__inner-container .wp-block-image figure {
+	body.home .wp-block-cover__inner-container .wp-block-image figure, body.page-id-599 .wp-block-cover__inner-container .wp-block-image figure, body.page-id-1145 .wp-block-cover__inner-container .wp-block-image figure {
 		margin: 0 auto;
 	}
 }
 
-body.page-id-599 .about-wc, body.page-id-1145 .about-wc {
+body.home .about-wc, body.page-id-599 .about-wc, body.page-id-1145 .about-wc {
 	max-width: 80rem !important;
 	align-items: center;
 }
 
-body.page-id-599 .about-wc a, body.page-id-1145 .about-wc a {
+body.home .about-wc a, body.page-id-599 .about-wc a, body.page-id-1145 .about-wc a {
 	color: #fff;
 }
 
-body.page-id-599 #site-content h2.about-wc-title, body.page-id-1145 #site-content h2.about-wc-title {
+body.home #site-content h2.about-wc-title, body.page-id-599 #site-content h2.about-wc-title, body.page-id-1145 #site-content h2.about-wc-title {
 	font-size: 24px;
 	line-height: 1.5;
 }
 
-body.page-id-599 #site-content h2.about-wc-title:after, body.page-id-1145 #site-content h2.about-wc-title:after {
+body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content h2.about-wc-title:after, body.page-id-1145 #site-content h2.about-wc-title:after {
 	content: none;
 }
 
@@ -1021,70 +1021,6 @@ nav.mobile-menu a {
 }
 
 a.to-the-top {
-	background: url(https://japan.wordcamp.org/2021/files/2021/03/to-top-wapoo.png) no-repeat 100% 100%;
-	background-size: contain;
-	position: fixed;
-	right: 1em;
-	bottom: 1.5em;
-	text-indent: -1000vw;
-	height: calc(238px * .4);
-	width: calc(216px * .4);
-	z-index: 10000;
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
-	animation-duration: 10s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-name: float-img;
-}
-
-@media (min-width: 768px) {
-	a.to-the-top {
-		height: calc(238px * .5);
-		width: calc(216px * .5);
-	}
-}
-
-@media (min-width: 992px) {
-	a.to-the-top {
-		height: calc(238px * .6);
-		width: calc(216px * .6);
-	}
-}
-
-a.to-the-top:hover {
-	animation-duration: 1.5s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-name: float-img-hover;
-}
-
-@keyframes float-img-hover {
-	0% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-10px) scale(1.02);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-
-@keyframes float-img {
-	0% {
-		transform: translateX(0) translateY(0) rotate(0);
-	}
-	50% {
-		transform: translateY(5px) translateY(-4px) rotate(-15deg);
-	}
-	100% {
-		transform: translateX(0) translateY(0) rotate(0);
-	}
-}
-
-body.page-id-599 a.to-the-top {
 	position: fixed;
 	bottom: 1.5em;
 	right: 1em;
@@ -1095,20 +1031,20 @@ body.page-id-599 a.to-the-top {
 }
 
 @media (min-width: 768px) {
-	body.page-id-599 a.to-the-top {
+	a.to-the-top {
 		height: calc(836px * 0.20);
 		width: calc(1003px * 0.20);
 	}
 }
 
 @media (min-width: 992px) {
-	body.page-id-599 a.to-the-top {
+	a.to-the-top {
 		height: calc(836px * 0.25);
 		width: calc(1003px * 0.25);
 	}
 }
 
-body.page-id-599 a.to-the-top::before, body.page-id-599 a.to-the-top::after {
+a.to-the-top::before, a.to-the-top::after {
 	content: '';
 	display: block;
 	height: 100%;
@@ -1120,25 +1056,25 @@ body.page-id-599 a.to-the-top::before, body.page-id-599 a.to-the-top::after {
 	z-index: -1;
 }
 
-body.page-id-599 a.to-the-top:before {
+a.to-the-top:before {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-spring.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-body.page-id-599 a.to-the-top:after {
+a.to-the-top:after {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-summer.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-body.page-id-599 a.to-the-top > span {
+a.to-the-top > span {
 	text-indent: -1000vw;
 	text-align: center;
 	white-space: nowrap;
 }
 
-body.page-id-599 a.to-the-top > span:first-child {
+a.to-the-top > span:first-child {
 	background: url(https://japan.wordcamp.org/2021/files/2021/04/wapoo.png) no-repeat 0 0%;
 	background-size: contain;
 	display: block;
@@ -1151,11 +1087,11 @@ body.page-id-599 a.to-the-top > span:first-child {
 	animation-name: float-img;
 }
 
-body.page-id-599 a.to-the-top > span:last-child {
+a.to-the-top > span:last-child {
 	display: block;
 }
 
-body.page-id-599 a.to-the-top > span:last-child::before, body.page-id-599 a.to-the-top > span:last-child::after {
+a.to-the-top > span:last-child::before, a.to-the-top > span:last-child::after {
 	content: '';
 	display: block;
 	height: 100%;
@@ -1167,48 +1103,48 @@ body.page-id-599 a.to-the-top > span:last-child::before, body.page-id-599 a.to-t
 	z-index: -1;
 }
 
-body.page-id-599 a.to-the-top > span:last-child:before {
+a.to-the-top > span:last-child:before {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-autumn.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-body.page-id-599 a.to-the-top > span:last-child:after {
+a.to-the-top > span:last-child:after {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/season-winter.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-body.page-id-599 a.to-the-top:hover:before {
-	animation-duration: 6s;
+a.to-the-top:hover:before {
+	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
 	animation-iteration-count: infinite;
 	animation-name: fade-in-4;
 }
 
-body.page-id-599 a.to-the-top:hover:after {
-	animation-duration: 6s;
+a.to-the-top:hover:after {
+	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.47, 0, 0.75, 0.72);
 	animation-iteration-count: infinite;
 	animation-name: fade-in-3;
 }
 
-body.page-id-599 a.to-the-top:hover > span:first-child {
-	animation-duration: 6s;
+a.to-the-top:hover > span:first-child {
+	animation-duration: 4s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
 	animation-name: hover-wapuu;
 }
 
-body.page-id-599 a.to-the-top:hover > span:last-child:before {
-	animation-duration: 6s;
+a.to-the-top:hover > span:last-child:before {
+	animation-duration: 4s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
 	animation-name: fade-in-2;
 }
 
-body.page-id-599 a.to-the-top:hover > span:last-child:after {
-	animation-duration: 6s;
+a.to-the-top:hover > span:last-child:after {
+	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	animation-iteration-count: infinite;
 	animation-name: fade-in-1;
@@ -1234,10 +1170,10 @@ body.page-id-599 a.to-the-top:hover > span:last-child:after {
 		transform: translateX(0) translateY(30px) rotate(60deg);
 	}
 	50% {
-		transform: translateX(10px) translateY(-5px) rotate(-10deg);
+		transform: translateX(10px) translateY(-8px) rotate(-10deg);
 	}
 	90% {
-		transform: translateX(0) translateY(10) rotate(0);
+		transform: translateX(0) translateY(0) rotate(0);
 	}
 	100% {
 		transform: translateX(0) translateY(0) rotate(0);
