@@ -5,22 +5,22 @@
 body {
 	//.homeトップページ
 	&.home,
-	&.page-id-1145 {
+	&.page-id-599 {
 		#site-header {
 			background-color: transparent;
-			background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual@2x.png) no-repeat center top;
+			background: url(https://japan.wordcamp.org/2021/files/2021/04/main-visual@2x.png) no-repeat center top;
 			background-size: cover;
-			@include mq('wide') {
-				//height: 100vh;
-				// background-size: contain;
-			}
+			// @include mq('wide') {
+			// 	//height: 100vh;
+			// 	// background-size: contain;
+			// }
 		}
 	}
 
 	//共通ヘッダースタイル
 	#site-header {
 		background-color: transparent;
-		background: url(https://japan.wordcamp.org/2021/files/2021/03/main-visual-under@2x.png) no-repeat center top;
+		background: url(https://japan.wordcamp.org/2021/files/2021/04/main-visual-under@2x.png) no-repeat center top;
 		background-size: cover;
 		min-height: $key_height;
 		position: relative;
@@ -101,7 +101,7 @@ body {
 		margin: 0 auto;
 	}
 	//ホーム以外でヘッダーの高さ調整
-	&:not(.home):not(.page-id-1145) {
+	&:not(.home):not(.page-id-599):not(.page-id-1145) {
 
 		//最終.homeだけでOK
 		#site-header {
