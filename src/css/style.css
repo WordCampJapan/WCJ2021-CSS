@@ -1564,7 +1564,7 @@ a.to-the-top:hover > span:last-child:after {
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title + p {
-	display: none;
+	font-size: 0.9em;
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers {
@@ -1635,85 +1635,26 @@ a.to-the-top:hover > span:last-child:after {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
 }
 
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 {
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .is-type-custom {
 	background-color: #EFEADF !important;
 }
 
 @media screen and (max-width: 767px) {
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3,
-	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .is-type-custom {
 		display: none;
 	}
 }
 
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3 .wordcamp-schedule__session-title,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 .wordcamp-schedule__session-title {
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .is-type-custom .wordcamp-schedule__session-title {
 	justify-content: center;
 }
 
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3 .wordcamp-schedule__session-title a,
-.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 .wordcamp-schedule__session-title a {
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .is-type-custom .wordcamp-schedule__session-title a {
 	font-weight: normal;
 	color: #333 !important;
 	text-decoration: none !important;
 	pointer-events: none;
+	margin: auto;
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2033"] .wordcamp-schedule__session-title,
