@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+$timetable-dark: #EFEADF;
+$timetable-border: #C6C2B9;
+
+/* timetable */
+.wordcamp-schedule {
+	h4 {
+		margin: 0 !important;
+	}
+	&.is-style-default {
+		// h2
+		.wordcamp-schedule__date {
+			&::before {
+				content: 'セッションデイ - ';
+			}
+			&.c-title__pink {
+				&::after {
+					background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
+				}
+			}
+			&.c-title__blue {
+				&::after {
+					background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
+				}
+			}
+		}
+		// settion table
+		.wordcamp-schedule__day {
+			background-color: transparent;
+			grid-gap: 0 !important;
+			padding: 0;
+			border-top: solid 1px $timetable-border;
+			border-left: solid 1px $timetable-border;
+			@include mq() {
+				border-top: none;
+				border-left: none;
+			}
+			.wordcamp-schedule__column-header {
+				font-size: 14px;
+				margin: 0 !important;
+				padding: .8em 5px !important;
+				// box-shadow: 0 0 1px 1px $timetable-border !important;
+				border-right: solid 1px $timetable-border;
+				border-bottom: solid 1px $timetable-border;
+				@include mq() {
+					margin-top: 20px;
+				}
+				&.is-column-time {
+					background-color: $timetable-dark;
+					padding-top: 1.4em !important;
+				}
+				&.is-column-track-spring,
+				&.is-column-track-summer,
+				&.is-column-track-autumn,
+				&.is-column-track-winter {
+					&::before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 20px;
+						background-repeat: no-repeat;
+						background-size: auto 100%;
+						background-position: center;
+					}
+				}
+				&.is-column-track-spring {
+					background-color: rgba(254,175,206,.2);
+					&::before {
+						background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_spring.png);
+					}
+				}
+				&.is-column-track-summer {
+					background-color: rgba(13,105,42,.2);
+					&::before {
+						background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_summer.png);
+					}
+				}
+				&.is-column-track-autumn {
+					background-color: rgba(240,130,36,.2);
+					&::before {
+						background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_autumn.png);
+					}
+				}
+				&.is-column-track-winter {
+					background-color: rgba(141,196,230,.2);
+					&::before {
+						background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
+					}
+				}
+			}
+			.wordcamp-schedule__time-slot-header {
+				padding: 0 !important;
+				min-height: 40px;
+				border-bottom: none !important;
+				background-color: $timetable-dark !important;
+				// box-shadow: 0 0 1px 1px $timetable-border;
+				box-shadow: none !important;
+				border-right: solid 1px $timetable-border !important;
+				border-bottom: solid 1px $timetable-border !important;
+				@include mq() {
+					min-height: initial;
+					padding: 10px !important;
+					margin: 20px 0 0;
+					border-top: solid 1px $timetable-border;
+					border-left: solid 1px $timetable-border;
+					// box-shadow: none;
+				}
+			}
+			.wordcamp-schedule__session {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				// box-shadow: 0 0 1px 1px $timetable-border;
+				box-shadow: none !important;
+				line-height: 1.3;
+				padding: 34px 9px;
+				border-right: solid 1px $timetable-border !important;
+				border-bottom: solid 1px $timetable-border !important;
+				@include mq() {
+					border-left: solid 1px $timetable-border !important;
+					border-bottom: solid 1px $timetable-border !important;
+					// border-bottom: none !important;
+					padding: 10px;
+					// box-shadow: none;
+				}
+				.wordcamp-schedule__session-title {
+					@include mq() {
+						order: 2;
+					}
+					a {
+						font-size: 14px;
+						color: #DB6B31;
+						text-decoration: underline;
+						margin-right: 2.5em;
+						@include mq() {
+							margin-right: 0;
+						}
+					}
+					.wcb-session-favourite-icon {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						@include mq() {
+							position: static;
+						}
+						a {
+							color: #BDB29A;
+							text-decoration: none;
+							margin-right: 0;
+							&[aria-pressed="true"],
+							&:hover {
+								color: #DB6B31;
+							}
+							.dashicons {
+								width: 16px;
+								height: 14px;
+								font-size: 14px;
+							}
+						}
+					}
+					+ p {
+						display: none;
+					}
+				}
+				.wordcamp-schedule__session-speakers {
+					margin: 0;
+					text-align: left;
+					@include mq() {
+						order: 3;
+					}
+					dd a {
+						color: #333333;
+						text-decoration: underline;
+					}
+				}
+				.wordcamp-schedule__session-tracks {
+					@include mq() {
+						order: 1;
+						margin: 0 0 10px;
+						padding: .5em;
+						font-weight: 600;
+						text-align: center;
+						dd {
+							&::before {
+								content: '';
+								width: 14px;
+								height: 14px;
+								display: inline-block;
+								background-size: contain;
+								background-repeat: no-repeat;
+								margin-right: .5em;
+								vertical-align: middle;
+							}
+						}
+					}
+				}
+				&.has-track-spring {
+					.wordcamp-schedule__session-tracks {
+						background-color: rgba(254,175,206,.2);
+						dd {
+							&::before {
+								background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_spring.png);
+							}
+						}
+					}
+				}
+				&.has-track-summer {
+					.wordcamp-schedule__session-tracks {
+						background-color: rgba(13,105,42,.2);
+						dd {
+							&::before {
+								background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_summer.png);
+							}
+						}
+					}
+				}
+				&.has-track-autumn {
+					.wordcamp-schedule__session-tracks {
+						background-color: rgba(240,130,36,.2);
+						dd {
+							&::before {
+								background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_autumn.png);
+							}
+						}
+					}
+				}
+				&.has-track-winter {
+					.wordcamp-schedule__session-tracks {
+						background-color: rgba(141,196,230,.2);
+						dd {
+							&::before {
+								background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
+							}
+						}
+					}
+				}
+			}
+			// 休憩のところ
+			.has-slug-break-spring-1,
+			.has-slug-break-spring-2,
+			.has-slug-break-spring-3,
+			.has-slug-break-spring-4,
+			.has-slug-summer-break-1,
+			.has-slug-summer-break-2,
+			.has-slug-summer-break-3,
+			.has-slug-summer-break-4,
+			.has-slug-break-autumn-1,
+			.has-slug-break-autumn-2,
+			.has-slug-break-autumn-3,
+			.has-slug-break-autumn-4,
+			.has-slug-winter-break-1,
+			.has-slug-winter-break-2,
+			.has-slug-winter-break-3,
+			.has-slug-winter-break-4 {
+				background-color: $timetable-dark !important;
+				@include mq() {
+					display: none;
+				}
+				.wordcamp-schedule__session-title {
+					justify-content: center;
+					a {
+						font-weight: normal;
+						color: #333 !important;
+						text-decoration: none !important;
+						pointer-events: none;
+					}
+				}
+			}
+			// 個別指定
+			div[data-session-id="2033"],
+			div[data-session-id="2035"],
+			div[data-session-id="2232"] {
+				.wordcamp-schedule__session-title {
+					justify-content: center;
+					a {
+						font-weight: normal;
+						color: #333 !important;
+						text-decoration: none !important;
+						pointer-events: none;
+					}
+					.wcb-session-favourite-icon {
+						display: none;
+					}
+				}
+				.wordcamp-schedule__session-tracks {
+					display: none;
+				}
+			}
+			div[data-session-id="2061"] {
+				.wordcamp-schedule__session-tracks {
+					display: none;
+				}
+			}
+			// SPで非表示
+			div[data-session-id="1977"],
+			div[data-session-id="1988"],
+			div[data-session-id="2024"],
+			div[data-session-id="2040"],
+			div[data-session-id="2047"],
+			div[data-session-id="2055"],
+			div[data-session-id="2081"],
+			div[data-session-id="2060"],
+			div[data-session-id="2071"],
+			div[data-session-id="2296"] {
+				+ .wordcamp-schedule__time-slot-header {
+					@include mq() {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
