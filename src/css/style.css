@@ -1383,3 +1383,381 @@ a.to-the-top:hover > span:last-child:after {
 		opacity: 0;
 	}
 }
+
+/* timetable */
+.wordcamp-schedule h4 {
+	margin: 0 !important;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__date::before {
+	content: 'セッションデイ - ';
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__date.c-title__pink::after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__date.c-title__blue::after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day {
+	background-color: transparent;
+	grid-gap: 0 !important;
+	padding: 0;
+	border-top: solid 1px #C6C2B9;
+	border-left: solid 1px #C6C2B9;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day {
+		border-top: none;
+		border-left: none;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header {
+	font-size: 14px;
+	margin: 0 !important;
+	padding: .8em 5px !important;
+	border-right: solid 1px #C6C2B9;
+	border-bottom: solid 1px #C6C2B9;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header {
+		margin-top: 20px;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-time {
+	background-color: #EFEADF;
+	padding-top: 1.4em !important;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-spring::before, .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-summer::before, .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-autumn::before, .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-winter::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-spring {
+	background-color: rgba(254, 175, 206, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-spring::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_spring.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-summer {
+	background-color: rgba(13, 105, 42, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-summer::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_summer.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-autumn {
+	background-color: rgba(240, 130, 36, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-autumn::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_autumn.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-winter {
+	background-color: rgba(141, 196, 230, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-track-winter::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__time-slot-header {
+	padding: 0 !important;
+	min-height: 40px;
+	border-bottom: none !important;
+	background-color: #EFEADF !important;
+	box-shadow: none !important;
+	border-right: solid 1px #C6C2B9 !important;
+	border-bottom: solid 1px #C6C2B9 !important;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__time-slot-header {
+		min-height: initial;
+		padding: 10px !important;
+		margin: 20px 0 0;
+		border-top: solid 1px #C6C2B9;
+		border-left: solid 1px #C6C2B9;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: none !important;
+	line-height: 1.3;
+	padding: 34px 9px;
+	border-right: solid 1px #C6C2B9 !important;
+	border-bottom: solid 1px #C6C2B9 !important;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session {
+		border-left: solid 1px #C6C2B9 !important;
+		border-bottom: solid 1px #C6C2B9 !important;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title {
+		order: 2;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title a {
+	font-size: 14px;
+	color: #DB6B31;
+	text-decoration: underline;
+	margin-right: 2.5em;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title a {
+		margin-right: 0;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon {
+		position: static;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon a {
+	color: #BDB29A;
+	text-decoration: none;
+	margin-right: 0;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon a[aria-pressed="true"], .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon a:hover {
+	color: #DB6B31;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title .wcb-session-favourite-icon a .dashicons {
+	width: 16px;
+	height: 14px;
+	font-size: 14px;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title + p {
+	display: none;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers {
+	margin: 0;
+	text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers {
+		order: 3;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers dd a {
+	color: #333333;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-tracks {
+		order: 1;
+		margin: 0 0 10px;
+		padding: .5em;
+		font-weight: 600;
+		text-align: center;
+	}
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-tracks dd::before {
+		content: '';
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-right: .5em;
+		vertical-align: middle;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-spring .wordcamp-schedule__session-tracks {
+	background-color: rgba(254, 175, 206, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-spring .wordcamp-schedule__session-tracks dd::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_spring.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-summer .wordcamp-schedule__session-tracks {
+	background-color: rgba(13, 105, 42, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-summer .wordcamp-schedule__session-tracks dd::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_summer.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-autumn .wordcamp-schedule__session-tracks {
+	background-color: rgba(240, 130, 36, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-autumn .wordcamp-schedule__session-tracks dd::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_autumn.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-winter .wordcamp-schedule__session-tracks {
+	background-color: rgba(141, 196, 230, 0.2);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session.has-track-winter .wordcamp-schedule__session-tracks dd::before {
+	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 {
+	background-color: #EFEADF !important;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 {
+		display: none;
+	}
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3 .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 .wordcamp-schedule__session-title {
+	justify-content: center;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-1 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-2 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-3 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-spring-4 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-1 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-2 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-3 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-summer-break-4 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-1 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-2 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-3 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-break-autumn-4 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-1 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-2 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-3 .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day .has-slug-winter-break-4 .wordcamp-schedule__session-title a {
+	font-weight: normal;
+	color: #333 !important;
+	text-decoration: none !important;
+	pointer-events: none;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2033"] .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2035"] .wordcamp-schedule__session-title,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2232"] .wordcamp-schedule__session-title {
+	justify-content: center;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2033"] .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2035"] .wordcamp-schedule__session-title a,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2232"] .wordcamp-schedule__session-title a {
+	font-weight: normal;
+	color: #333 !important;
+	text-decoration: none !important;
+	pointer-events: none;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2033"] .wordcamp-schedule__session-title .wcb-session-favourite-icon,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2035"] .wordcamp-schedule__session-title .wcb-session-favourite-icon,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2232"] .wordcamp-schedule__session-title .wcb-session-favourite-icon {
+	display: none;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2033"] .wordcamp-schedule__session-tracks,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2035"] .wordcamp-schedule__session-tracks,
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2232"] .wordcamp-schedule__session-tracks {
+	display: none;
+}
+
+.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2061"] .wordcamp-schedule__session-tracks {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="1977"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="1988"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2024"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2040"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2047"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2055"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2081"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2060"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2071"] + .wordcamp-schedule__time-slot-header,
+	.wordcamp-schedule.is-style-default .wordcamp-schedule__day div[data-session-id="2296"] + .wordcamp-schedule__time-slot-header {
+		display: none;
+	}
+}
