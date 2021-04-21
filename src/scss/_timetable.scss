@@ -241,22 +241,7 @@ $timetable-border: #C6C2B9;
 				}
 			}
 			// 休憩のところ
-			.has-slug-break-spring-1,
-			.has-slug-break-spring-2,
-			.has-slug-break-spring-3,
-			.has-slug-break-spring-4,
-			.has-slug-summer-break-1,
-			.has-slug-summer-break-2,
-			.has-slug-summer-break-3,
-			.has-slug-summer-break-4,
-			.has-slug-break-autumn-1,
-			.has-slug-break-autumn-2,
-			.has-slug-break-autumn-3,
-			.has-slug-break-autumn-4,
-			.has-slug-winter-break-1,
-			.has-slug-winter-break-2,
-			.has-slug-winter-break-3,
-			.has-slug-winter-break-4 {
+			.is-type-custom {
 				background-color: $timetable-dark !important;
 				@include mq() {
 					display: none;
@@ -268,6 +253,7 @@ $timetable-border: #C6C2B9;
 						color: #333 !important;
 						text-decoration: none !important;
 						pointer-events: none;
+						margin: auto;
 					}
 				}
 			}
