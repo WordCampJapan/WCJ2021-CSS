@@ -58,3 +58,21 @@
 		width: 50%;
 	}
 }
+
+// スポンサーロゴの表示調整
+.wp-block-group.sponsors {
+	.wordcamp-post-list__post {
+		outline: 1px solid rgba(#000 ,.15);
+		outline-offset: -.5em;
+		padding: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		img {
+			//margin: auto;
+			max-height: calc(200px - 2em);
+			width: auto;
+		}
+	}
+}

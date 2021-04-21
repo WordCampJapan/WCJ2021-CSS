@@ -964,6 +964,21 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	}
 }
 
+.wp-block-group.sponsors .wordcamp-post-list__post {
+	outline: 1px solid rgba(0, 0, 0, 0.15);
+	outline-offset: -.5em;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+}
+
+.wp-block-group.sponsors .wordcamp-post-list__post img {
+	max-height: calc(200px - 2em);
+	width: auto;
+}
+
 #site-content h2 {
 	letter-spacing: normal;
 }
