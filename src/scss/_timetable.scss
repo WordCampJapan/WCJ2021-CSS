@@ -161,8 +161,10 @@ $timetable-border: #C6C2B9;
 							}
 						}
 					}
+					// 各セッションの時間を非表示にすると、スマホ表示の時に終了時間が分からないので、表示を出す
 					+ p {
-						display: none;
+						font-size: 0.9em;
+						// display: none;
 					}
 				}
 				.wordcamp-schedule__session-speakers {

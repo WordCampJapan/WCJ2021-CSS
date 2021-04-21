@@ -1564,7 +1564,7 @@ a.to-the-top:hover > span:last-child:after {
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title + p {
-	display: none;
+	font-size: 0.9em;
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers {
