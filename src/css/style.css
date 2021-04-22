@@ -1268,30 +1268,35 @@ a.to-the-top > span:last-child:after {
 a.to-the-top:hover:before {
 	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+	animation-iteration-count: 1;
 	animation-name: fade-in-4;
 }
 
 a.to-the-top:hover:after {
 	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.47, 0, 0.75, 0.72);
+	animation-iteration-count: 1;
 	animation-name: fade-in-3;
 }
 
 a.to-the-top:hover > span:first-child {
 	animation-duration: 4s;
 	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
 	animation-name: hover-wapuu;
 }
 
 a.to-the-top:hover > span:last-child:before {
 	animation-duration: 4s;
 	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
 	animation-name: fade-in-2;
 }
 
 a.to-the-top:hover > span:last-child:after {
 	animation-duration: 4s;
 	animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	animation-iteration-count: 1;
 	animation-name: fade-in-1;
 }
 
