@@ -41,8 +41,8 @@
 	}
 }
 
-$left_media_border_color: #e9bd8b;
-$right_media_border_color: #a2d1e6;
+$left_media_border_color: $primary;
+$right_media_border_color: $secondary;
 
 .fukidashi-left-media,
 .fukidashi-right-media {

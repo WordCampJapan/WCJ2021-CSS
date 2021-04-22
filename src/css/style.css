@@ -1770,7 +1770,7 @@ a.to-the-top:hover > span:last-child:after {
 }
 
 .fukidashi-left-media .wp-block-media-text__content {
-	border-color: #e9bd8b;
+	border-color: #315bc2;
 	margin-left: 2em;
 }
 
@@ -1784,11 +1784,11 @@ a.to-the-top:hover > span:last-child:after {
 
 .fukidashi-left-media .wp-block-media-text__content:before {
 	margin-right: 2px;
-	border-right-color: #e9bd8b;
+	border-right-color: #315bc2;
 }
 
 .fukidashi-right-media .wp-block-media-text__content {
-	border-color: #a2d1e6;
+	border-color: #db6b31;
 	margin-right: 2em;
 }
 
@@ -1802,5 +1802,5 @@ a.to-the-top:hover > span:last-child:after {
 
 .fukidashi-right-media .wp-block-media-text__content:before {
 	margin-left: 2px;
-	border-left-color: #a2d1e6;
+	border-left-color: #db6b31;
 }
