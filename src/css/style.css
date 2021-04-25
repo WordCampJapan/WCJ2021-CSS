@@ -7532,6 +7532,6 @@ a.to-the-top:hover > span:last-child:after {
 
 /* session speaker */
 .single-wcb_session .pagination-single,
-.single-wcb_speake .pagination-single {
+.single-wcb_speaker .pagination-single {
 	display: none;
 }
