@@ -7428,7 +7428,7 @@ a.to-the-top:hover > span:last-child:after {
 	background-color: #738d5b;
 	border-bottom: none;
 	color: #fffdf8;
-	margin-bottom: 0;
+	margin: 0;
 	padding: .5em;
 }
 
