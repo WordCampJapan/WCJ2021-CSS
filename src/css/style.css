@@ -334,6 +334,16 @@ a.wp-block-button__link:after {
 	text-decoration: none;
 }
 
+.wp-block-button.is-style-outline a.wp-block-button__link {
+	border: 2px solid #db6b31;
+	color: #db6b31;
+}
+
+.wp-block-button.is-style-outline a.wp-block-button__link:hover {
+	color: #fff;
+	border: 2px solid #ff8e55;
+}
+
 body.home #site-header, body.page-id-599 #site-header {
 	background-color: transparent;
 	background: url(https://japan.wordcamp.org/2021/files/2021/04/main-visual@2x.png) no-repeat center top;

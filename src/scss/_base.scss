@@ -328,19 +328,27 @@ a.wp-block-button__link {
 	border-radius: 3em;
 	display: inline-flex;
 	&:after {
-		// background: url(https://japan.wordcamp.org/2021/files/2021/04/btn-arrow@2x.png) no-repeat 0 0;
-		// background-size: contain;
-		// content: '';
 		content: '\f054';
 		display: inline-block;
 		font-family: 'FontAwesome';
-		// height: 15px;
-		// width: 8px;
 		margin-left: .5em;
 	}
 }
 
 .wp-block-button a.wp-block-button__link:hover {
-    background: #ff8e55;
-    text-decoration: none;
+	background: #ff8e55;
+	text-decoration: none;
+}
+
+.wp-block-button {
+	&.is-style-outline {
+		a.wp-block-button__link {
+		border: 2px solid #db6b31;
+		color: #db6b31;
+			&:hover {
+				color: #fff;
+				border: 2px solid #ff8e55;
+			}
+		}
+	}
 }
