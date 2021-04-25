@@ -7,3 +7,11 @@
 .page-id-12 .sd-block {
 	display: none;
 }
+
+/* speaker */
+// speakerページのページネーションを非表示に
+.single-wcb_speake {
+	.pagination-single {
+		display: none;
+	}
+}

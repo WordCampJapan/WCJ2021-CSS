@@ -7529,3 +7529,8 @@ a.to-the-top:hover > span:last-child:after {
 .page-id-12 .sd-block {
 	display: none;
 }
+
+/* speaker */
+.single-wcb_speake .pagination-single {
+	display: none;
+}
