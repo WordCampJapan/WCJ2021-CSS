@@ -7530,7 +7530,8 @@ a.to-the-top:hover > span:last-child:after {
 	display: none;
 }
 
-/* speaker */
+/* session speaker */
+.single-wcb_session .pagination-single,
 .single-wcb_speake .pagination-single {
 	display: none;
 }

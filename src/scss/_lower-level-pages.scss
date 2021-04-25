@@ -8,10 +8,13 @@
 	display: none;
 }
 
-/* speaker */
+/* session speaker */
+// sessionページのページネーションを非表示に
 // speakerページのページネーションを非表示に
+.single-wcb_session,
 .single-wcb_speake {
 	.pagination-single {
 		display: none;
 	}
 }
+
