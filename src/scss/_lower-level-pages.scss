@@ -18,3 +18,15 @@
 	}
 }
 
+// カテゴリーリンクのスタイル調整
+span.session-categories-links {
+	font-size: 0.85em;
+	.screen-reader-text {
+		clip: unset;
+		clip-path: unset;
+		display: block;
+		height: inherit;
+		width: inherit;
+		position: relative!important;
+	}
+}

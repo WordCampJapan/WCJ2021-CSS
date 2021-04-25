@@ -7535,3 +7535,17 @@ a.to-the-top:hover > span:last-child:after {
 .single-wcb_speaker .pagination-single {
 	display: none;
 }
+
+span.session-categories-links {
+	font-size: 0.85em;
+}
+
+span.session-categories-links .screen-reader-text {
+	clip: unset;
+	-webkit-clip-path: unset;
+	        clip-path: unset;
+	display: block;
+	height: inherit;
+	width: inherit;
+	position: relative !important;
+}
