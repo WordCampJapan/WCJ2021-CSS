@@ -7524,3 +7524,8 @@ a.to-the-top:hover > span:last-child:after {
 	margin-left: 2px;
 	border-left-color: #db6b31;
 }
+
+/* organizers */
+.page-id-12 .sd-block {
+	display: none;
+}

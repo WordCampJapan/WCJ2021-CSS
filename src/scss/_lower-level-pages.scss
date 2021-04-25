@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+/* organizers */
+// 実行委員一覧で1人1人にいいねボタンが出ているのを非表示に
+.page-id-12 .sd-block {
+	display: none;
+}
