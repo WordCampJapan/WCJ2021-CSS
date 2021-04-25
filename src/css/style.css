@@ -7554,3 +7554,7 @@ span.session-categories-links .screen-reader-text {
 .entry-content .wordcamp-speakers__session-info {
 	font-style: normal;
 }
+
+.wordcamp-block__item-title.wordcamp-speakers__title a {
+	text-decoration: none;
+}
