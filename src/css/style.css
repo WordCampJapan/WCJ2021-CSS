@@ -7549,3 +7549,8 @@ span.session-categories-links .screen-reader-text {
 	width: inherit;
 	position: relative !important;
 }
+
+.editor-styles-wrapper .wordcamp-speakers__session-info,
+.entry-content .wordcamp-speakers__session-info {
+	font-style: normal;
+}

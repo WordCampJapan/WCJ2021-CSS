@@ -30,3 +30,9 @@ span.session-categories-links {
 		position: relative!important;
 	}
 }
+
+// font-style: italic;をnormalに変更
+.editor-styles-wrapper .wordcamp-speakers__session-info,
+.entry-content .wordcamp-speakers__session-info {
+	font-style: normal;
+}
