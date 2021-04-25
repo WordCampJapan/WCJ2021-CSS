@@ -303,3 +303,22 @@ $timetable-border: #C6C2B9;
 		}
 	}
 }
+
+/* .contributor-day */
+
+// コントリデイの日付
+#site-content {
+	.title__contriday {
+		background-color: #738d5b;
+		border-bottom: none;
+		color: $alt;
+		margin-bottom: 0;
+		padding: .5em;
+	}
+}
+.wp-block-group.alignfull.contributor-day {
+	border: 1px solid #c6c2b9;
+	border-top: none;
+	margin: auto;
+	padding: 1rem 1rem 3rem;
+}

@@ -7423,6 +7423,22 @@ a.to-the-top:hover > span:last-child:after {
 	}
 }
 
+/* .contributor-day */
+#site-content .title__contriday {
+	background-color: #738d5b;
+	border-bottom: none;
+	color: #fffdf8;
+	margin-bottom: 0;
+	padding: .5em;
+}
+
+.wp-block-group.alignfull.contributor-day {
+	border: 1px solid #c6c2b9;
+	border-top: none;
+	margin: auto;
+	padding: 1rem 1rem 3rem;
+}
+
 /* fukidashi */
 .fukidashi img {
 	border-radius: 30px;
