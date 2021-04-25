@@ -328,12 +328,14 @@ a.wp-block-button__link {
 	border-radius: 3em;
 	display: inline-flex;
 	&:after {
-		background: url(https://japan.wordcamp.org/2021/files/2021/04/btn-arrow@2x.png) no-repeat 0 0;
-		background-size: contain;
-		content: '';
+		// background: url(https://japan.wordcamp.org/2021/files/2021/04/btn-arrow@2x.png) no-repeat 0 0;
+		// background-size: contain;
+		// content: '';
+		content: '\f054';
 		display: inline-block;
-		height: 15px;
-		width: 8px;
+		font-family: 'FontAwesome';
+		// height: 15px;
+		// width: 8px;
 		margin-left: .5em;
 	}
 }
