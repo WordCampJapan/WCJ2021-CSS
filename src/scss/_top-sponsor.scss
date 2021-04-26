@@ -29,8 +29,11 @@
 	margin: 0;
 }
 
-.wordcamp-sponsors.silver li {
-	width: 33.3333%;
+.wordcamp-sponsors.silver,
+.wordcamp-sponsors.in-kind {
+		li {
+		width: 33.3333%;
+	}
 }
 
 @media screen and (max-width: 767px) {
