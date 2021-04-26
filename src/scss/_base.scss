@@ -329,13 +329,10 @@ tfoot tr {
 }
 
 a.wp-block-button__link {
-	align-items: center;
 	background: $secondary;
 	border-radius: 3em;
-	display: inline-flex;
 	&:after {
 		content: '\f054';
-		display: inline-block;
 		font-family: 'FontAwesome';
 		margin-left: .5em;
 	}

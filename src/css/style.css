@@ -6019,15 +6019,12 @@ tfoot tr {
 }
 
 a.wp-block-button__link {
-	align-items: center;
 	background: #db6b31;
 	border-radius: 3em;
-	display: inline-flex;
 }
 
 a.wp-block-button__link:after {
 	content: '\f054';
-	display: inline-block;
 	font-family: 'FontAwesome';
 	margin-left: .5em;
 }
