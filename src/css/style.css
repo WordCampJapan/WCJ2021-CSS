@@ -6623,7 +6623,7 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 }
 
 /* sponsors */
-.sponsors.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
+.home .sponsors.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
 	margin-top: 17rem;
 }
 
@@ -6631,8 +6631,11 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 7rem;
 	max-width: 100% !important;
+}
+
+.home .wordcamp-sponsors {
+	margin-top: 7rem;
 }
 
 .sponsors h2 {
@@ -6655,7 +6658,7 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 }
 
 @media screen and (max-width: 767px) {
-	.sponsors.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
+	.home .sponsors.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull) {
 		margin-top: 6rem;
 	}
 	.sponsors h2 {
@@ -6664,13 +6667,14 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	.sponsors p.sub {
 		font-size: 1.8rem;
 	}
-	.wordcamp-sponsors {
+	.home .wordcamp-sponsors {
 		margin-top: 2rem;
 	}
 	.wordcamp-sponsors li {
 		width: 100%;
 	}
-	.wordcamp-sponsors.silver li {
+	.wordcamp-sponsors.silver li,
+	.wordcamp-sponsors.in-kind li {
 		width: 50%;
 	}
 }
