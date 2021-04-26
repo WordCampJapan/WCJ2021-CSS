@@ -2686,17 +2686,17 @@ h2.entry-title {
 
 .entry-content .has-medium-font-size {
 	font-size: 1.1em;
-	line-height: 1.45;
+	line-height: 1.65;
 }
 
 .entry-content .has-large-font-size {
 	font-size: 1.25em;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 .entry-content .has-larger-font-size {
 	font-size: 1.5em;
-	line-height: 1.3;
+	line-height: 1.5;
 }
 
 /* Block: Base Margins ----------------------- */
@@ -3259,7 +3259,7 @@ figure.wp-block-table.is-style-stripes {
 /*	11. Entry Content
 /* -------------------------------------------------------------------------- */
 .entry-content {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 .entry-content > * {
@@ -3288,7 +3288,7 @@ figure.wp-block-table.is-style-stripes {
 
 .entry-content p,
 .entry-content li {
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 .entry-content li img {
@@ -4858,7 +4858,7 @@ a.to-the-top > * {
 	}
 	.entry-content p,
 	.entry-content li {
-		line-height: 1.476;
+		line-height: 1.8;
 	}
 	.entry-content h1,
 	.entry-content h2,
