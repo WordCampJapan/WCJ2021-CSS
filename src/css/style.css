@@ -5977,6 +5977,12 @@ input[type="submit"],
 	background-color: #315bc2;
 }
 
+input[type="checkbox"] {
+	appearance: checkbox;
+	-moz-appearance: checkbox;
+	-webkit-appearance: checkbox;
+}
+
 .primary-menu a,
 .entry-categories a {
 	color: #315bc2 !important;
