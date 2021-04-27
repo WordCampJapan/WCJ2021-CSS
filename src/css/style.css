@@ -7260,7 +7260,6 @@ a.to-the-top:hover > span:last-child:after {
 	font-size: 14px;
 	color: #DB6B31;
 	text-decoration: underline;
-	margin-right: 2.5em;
 }
 
 @media screen and (max-width: 767px) {
