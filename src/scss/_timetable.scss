@@ -6,6 +6,31 @@ $timetable-dark: #EFEADF;
 $timetable-border: #C6C2B9;
 
 /* timetable */
+
+#site-content {
+	.day-1 {
+		.wordcamp-schedule__date {
+			&::after {
+				background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
+				background-size: contain;
+			}
+		}
+	}
+	.day-7 {
+		.wordcamp-schedule__date {
+			&::after {
+				background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
+				background-size: contain;
+			}
+		}
+	}
+	.contributor-days-date {
+		&::after {
+			background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_green-1.png) no-repeat 0 0;
+			background-size: contain;
+		}
+	}
+}
 .wordcamp-schedule {
 	h4 {
 		margin: 0 !important;
@@ -15,16 +40,6 @@ $timetable-border: #C6C2B9;
 		.wordcamp-schedule__date {
 			&::before {
 				content: 'セッションデイ - ';
-			}
-			&.c-title__pink {
-				&::after {
-					background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
-				}
-			}
-			&.c-title__blue {
-				&::after {
-					background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
-				}
 			}
 		}
 		// settion table

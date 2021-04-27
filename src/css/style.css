@@ -7112,20 +7112,27 @@ a.to-the-top:hover > span:last-child:after {
 }
 
 /* timetable */
+#site-content .day-1 .wordcamp-schedule__date::after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
+	background-size: contain;
+}
+
+#site-content .day-7 .wordcamp-schedule__date::after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
+	background-size: contain;
+}
+
+#site-content .contributor-days-date::after {
+	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_green-1.png) no-repeat 0 0;
+	background-size: contain;
+}
+
 .wordcamp-schedule h4 {
 	margin: 0 !important;
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__date::before {
 	content: 'セッションデイ - ';
-}
-
-.wordcamp-schedule.is-style-default .wordcamp-schedule__date.c-title__pink::after {
-	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_pink.png) no-repeat 0 0;
-}
-
-.wordcamp-schedule.is-style-default .wordcamp-schedule__date.c-title__blue::after {
-	background: url(https://japan.wordcamp.org/2021/files/2021/04/bg-h2_blue.png) no-repeat 0 0;
 }
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day {
