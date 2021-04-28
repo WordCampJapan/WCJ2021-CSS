@@ -6843,7 +6843,7 @@ nav.mobile-menu a {
 		justify-content: center;
 	}
 	.footer-menu li {
-		width: 100%;
+		display: flex;
 	}
 	.footer-menu li a {
 		width: 100%;
