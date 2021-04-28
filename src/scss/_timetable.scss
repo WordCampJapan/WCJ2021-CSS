@@ -258,6 +258,7 @@ $timetable-border: #C6C2B9;
 			// 休憩のところ
 			.is-type-custom {
 				background-color: $timetable-dark !important;
+				padding: 5px;
 				text-align: center;
 				@include mq() {
 					display: none;
