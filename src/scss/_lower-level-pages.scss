@@ -16,6 +16,18 @@
 	.pagination-single {
 		display: none;
 	}
+} 
+.wordcamp-sessions__title {
+	a {
+		text-decoration: none;
+	}
+}
+.editor-styles-wrapper .wordcamp-sessions__speakers,
+.editor-styles-wrapper .wordcamp-sessions__details,
+.entry-content .wordcamp-sessions__speakers,
+.entry-content .wordcamp-sessions__details {
+	font-style: normal;
+	font-weight: 100;
 }
 
 // カテゴリーリンクのスタイル調整
