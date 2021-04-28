@@ -5567,6 +5567,10 @@ a.to-the-top > * {
 	.footer-menu {
 		// font-size: 2.4rem;
 		margin: -0.8rem 0 0 -1.6rem;
+		align-items: baseline;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.footer-menu li {
@@ -6095,10 +6099,10 @@ a.to-the-top > * {
 	}
 
 	.footer-menu {
-		align-items: baseline;
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: wrap;
+		// align-items: baseline;
+		// display: flex;
+		// justify-content: flex-start;
+		// flex-wrap: wrap;
 		// font-size: 2.1rem;
 		margin: -1.2rem 0 0 -2.4rem;
 	}
