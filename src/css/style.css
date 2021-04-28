@@ -4113,12 +4113,6 @@ div.comment:first-of-type {
 }
 
 /* Footer Top -------------------------------- */
-.footer-top {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
 /* FOOTER MENU */
 .footer-menu {
 	font-size: 1.4rem;
@@ -4143,13 +4137,11 @@ div.comment:first-of-type {
 }
 
 .footer-menu-wrapper {
-	order: 1;
-	width: 100%;
+	margin-bottom: 1em;
 }
 
 /* FOOTER SOCIAL */
 .footer-social-wrapper {
-	order: 0;
 	margin: 0;
 	width: 100%;
 }
@@ -5042,7 +5034,6 @@ a.to-the-top > * {
 	}
 	.has-footer-menu .footer-social-wrapper {
 		flex: 1;
-		margin-left: 4rem;
 		width: auto;
 	}
 	/* FOOTER WIDGETS */
