@@ -4382,6 +4382,7 @@ div.comment:first-of-type {
 .footer-top {
 	display: flex;
 	// border-bottom: 0.1rem solid #dedfdf;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -4424,7 +4425,7 @@ div.comment:first-of-type {
 
 .has-footer-menu .footer-social-wrapper {
 	flex-shrink: 0;
-	margin-left: 1rem;
+	// margin-left: 1rem;
 	width: 50%;
 }
 

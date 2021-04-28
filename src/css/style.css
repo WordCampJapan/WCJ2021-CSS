@@ -4115,6 +4115,7 @@ div.comment:first-of-type {
 /* Footer Top -------------------------------- */
 .footer-top {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -4154,7 +4155,6 @@ div.comment:first-of-type {
 
 .has-footer-menu .footer-social-wrapper {
 	flex-shrink: 0;
-	margin-left: 1rem;
 	width: 50%;
 }
 
