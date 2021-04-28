@@ -53,3 +53,134 @@ span.session-categories-links {
 .wordcamp-block__item-title.wordcamp-speakers__title a {
 	text-decoration: none;
 }
+
+
+// スマホでメニューを開いたときロゴが前に来ないように
+.menu-modal.active {
+    z-index: 100000;
+}
+
+// 登壇者プロフィールページの post meta を非表示
+.single-wcb_speaker .post-meta {
+    display: none;
+}
+
+// セッション詳細ページ
+.single-wcb_session .post-meta-wrapper.post-meta-single.post-meta-single-top {
+    display: none;
+}
+#session-speaker-names,
+#speaker-session-names {
+    margin-left: auto;
+}
+span.session-categories-links {
+    display: block;
+}
+
+// スポンサーロゴの表示調整
+.wp-block-group.sponsors {
+	.wordcamp-post-list__post {
+		outline: 1px solid rgba(#000 ,.15);
+		outline-offset: -.5em;
+		padding: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		img {
+			//margin: auto;
+			max-height: calc(200px - 2em);
+			width: auto;
+		}
+	}
+}
+
+// Camptixのテーブル整形
+.tix_tickets_table {
+	margin-top: 0;
+}
+
+.tix-ticket-title {
+	font-size: 1em;
+}
+.tix-ticket-excerpt {
+	display: inline-block;
+	font-size: 0.85em;
+	margin-top: -1em;
+}
+
+//Camptixのチェックボックス選択できない問題の解決
+.tix_tickets_table {
+	input[type="checkbox"] {
+		-webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+  	appearance: checkbox;
+	}
+}
+
+h3,h4,h5 {
+	&.wapuu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		&:before {
+			background: url(https://japan.wordcamp.org/2021/files/2021/04/wapoo_wcj2021_only.png) no-repeat 0 0;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 2.4em;
+			width: 2.8em;
+			margin-right: .5em;
+		}
+	}
+}
+
+// コントリデイのタイムテーブル
+.wp-block-group.contributor-day {
+	h4,
+	p,
+	.wp-block-button__link {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+}
+
+// 登壇者のグラバター
+.speaker-avatar img {
+    border-radius: 10px;
+}
+
+//セッションページのレイアウト調整
+@media (min-width: 400px) {
+	.wordcamp-post-list.has-layout-grid {
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+	}
+}
+
+.wordcamp-sessions__track {
+	content: '';
+  display: inline-block;
+  width: auto;
+  height: 1.8em;
+	background-repeat: no-repeat;   background-size: auto 1em;
+  background-position: 0.25em center;
+	padding-left: 1.5em;
+	font-weight: bold;
+	&.slug-spring {
+		background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_spring.png);
+		color: #ffafce;
+	}
+	&.slug-summer {
+		background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_summer.png);
+		color: #00692a;
+	}
+	&.slug-autumn {
+		background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_autumn.png);
+		color: #f08224;
+	}
+	&.slug-winter {
+		background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
+		color: #8dc4e6;
+	}
+}
