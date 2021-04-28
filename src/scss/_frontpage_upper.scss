@@ -139,11 +139,6 @@ body {
 			p {
 				white-space: nowrap;
 			}
-			// リンク未設定の間
-			img {
-				mix-blend-mode: luminosity;
-				opacity: .5;
-			}
 			@include mq() {
 				width: calc(100% - 30px) !important;
 				&>.wp-block-column {

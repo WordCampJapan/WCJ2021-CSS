@@ -6334,11 +6334,6 @@ body.home .icon-menu p, body.page-id-599 .icon-menu p, body.page-id-1145 .icon-m
 	white-space: nowrap;
 }
 
-body.home .icon-menu img, body.page-id-599 .icon-menu img, body.page-id-1145 .icon-menu img {
-	mix-blend-mode: luminosity;
-	opacity: .5;
-}
-
 @media screen and (max-width: 767px) {
 	body.home .icon-menu, body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
 		width: calc(100% - 30px) !important;
