@@ -4115,13 +4115,12 @@ div.comment:first-of-type {
 /* Footer Top -------------------------------- */
 .footer-top {
 	display: flex;
-	border-bottom: 0.1rem solid #dedfdf;
 	justify-content: space-between;
 }
 
 /* FOOTER MENU */
 .footer-menu {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	font-weight: 700;
 	letter-spacing: -0.0277em;
 }
@@ -5021,7 +5020,6 @@ a.to-the-top > * {
 		padding: 3.7rem 0;
 	}
 	.footer-menu {
-		font-size: 2.4rem;
 		margin: -0.8rem 0 0 -1.6rem;
 	}
 	.footer-menu li {
@@ -5430,7 +5428,6 @@ a.to-the-top > * {
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		font-size: 2.1rem;
 		margin: -1.2rem 0 0 -2.4rem;
 	}
 	.footer-menu li {
