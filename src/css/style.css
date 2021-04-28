@@ -6780,6 +6780,7 @@ nav.mobile-menu a {
 }
 
 /* footer */
+.footer-nav-widgets-wrapper,
 #site-footer {
 	background: #333;
 	color: #fff;
