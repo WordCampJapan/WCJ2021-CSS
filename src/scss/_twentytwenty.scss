@@ -4474,7 +4474,8 @@ ul.footer-social li {
 #site-footer .section-inner {
 	align-items: baseline;
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
+	justify-content: center;
 }
 
 #site-footer a {
