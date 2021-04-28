@@ -7434,6 +7434,10 @@ a.to-the-top:hover > span:last-child:after {
 	}
 }
 
+.wordcamp-schedule__session.has-category-ceremony {
+	text-align: center;
+}
+
 /* .contributor-day */
 #site-content .title__contriday {
 	background-color: #738d5b;

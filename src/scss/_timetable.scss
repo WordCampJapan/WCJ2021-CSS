@@ -319,6 +319,11 @@ $timetable-border: #C6C2B9;
 	}
 }
 
+// 開会式・基調講演・閉会式
+.wordcamp-schedule__session.has-category-ceremony {
+	text-align: center;
+}
+
 /* .contributor-day */
 
 // コントリデイの日付
