@@ -7367,6 +7367,7 @@ a.to-the-top:hover > span:last-child:after {
 
 .wordcamp-schedule.is-style-default .wordcamp-schedule__day .is-type-custom {
 	background-color: #EFEADF !important;
+	padding: 5px;
 	text-align: center;
 }
 
