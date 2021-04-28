@@ -324,6 +324,15 @@ $timetable-border: #C6C2B9;
 	text-align: center;
 }
 
+// 3分間の休憩
+#site-content .wordcamp-schedule__session.has-category-break {
+	padding: 0;
+	h4,
+	p {
+		display: none;
+	}
+}
+
 /* .contributor-day */
 
 // コントリデイの日付

@@ -7438,6 +7438,15 @@ a.to-the-top:hover > span:last-child:after {
 	text-align: center;
 }
 
+#site-content .wordcamp-schedule__session.has-category-break {
+	padding: 0;
+}
+
+#site-content .wordcamp-schedule__session.has-category-break h4,
+#site-content .wordcamp-schedule__session.has-category-break p {
+	display: none;
+}
+
 /* .contributor-day */
 #site-content .title__contriday {
 	background-color: #738d5b;
