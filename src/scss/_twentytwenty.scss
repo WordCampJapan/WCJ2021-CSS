@@ -4410,9 +4410,14 @@ div.comment:first-of-type {
 	text-decoration: underline;
 }
 
+.footer-menu-wrapper {
+	order: 1;
+}
+
 /* FOOTER SOCIAL */
 
 .footer-social-wrapper {
+	order: 0;
 	margin: 0;
 	width: 100%;
 }
@@ -4428,7 +4433,8 @@ ul.footer-social {
 }
 
 .has-footer-menu .footer-social {
-	justify-content: flex-end;
+	// justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 ul.footer-social li {
