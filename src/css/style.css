@@ -6676,22 +6676,22 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	outline: 1px solid rgba(0, 0, 0, 0.15);
 	outline-offset: -.5em;
 	padding: .5em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 200px;
 }
 
 .wp-block-group.sponsors .wordcamp-post-list__post .wordcamp-sponsor,
 .wp-block-group.sponsors .wordcamp-post-list__post .wordcamp-sponsors__logo {
 	height: 100%;
+	width: 100%;
 }
 
 .wp-block-group.sponsors .wordcamp-post-list__post a {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 100%;
 	padding: 1em;
+	width: 100%;
 }
 
 .wp-block-group.sponsors .wordcamp-post-list__post img {
