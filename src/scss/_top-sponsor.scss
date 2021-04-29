@@ -71,11 +71,21 @@
 	.wordcamp-post-list__post {
 		outline: 1px solid rgba(#000 ,.15);
 		outline-offset: -.5em;
-		padding: 1em;
+		padding: .5em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 200px;
+		.wordcamp-sponsor,
+		.wordcamp-sponsors__logo {
+			height: 100%;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding: 1em;
+		}
 		img {
 			//margin: auto;
 			max-height: calc(200px - 2em);

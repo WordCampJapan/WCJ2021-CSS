@@ -6325,6 +6325,7 @@ body.home .schedule ul li, body.page-id-599 .schedule ul li, body.page-id-1145 .
 }
 
 body.home .icon-menu, body.page-id-599 .icon-menu, body.page-id-1145 .icon-menu {
+	display: flex;
 	font-weight: 700;
 }
 
@@ -6674,11 +6675,23 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 .wp-block-group.sponsors .wordcamp-post-list__post {
 	outline: 1px solid rgba(0, 0, 0, 0.15);
 	outline-offset: -.5em;
-	padding: 1em;
+	padding: .5em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 200px;
+}
+
+.wp-block-group.sponsors .wordcamp-post-list__post .wordcamp-sponsor,
+.wp-block-group.sponsors .wordcamp-post-list__post .wordcamp-sponsors__logo {
+	height: 100%;
+}
+
+.wp-block-group.sponsors .wordcamp-post-list__post a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 1em;
 }
 
 .wp-block-group.sponsors .wordcamp-post-list__post img {
@@ -7561,21 +7574,6 @@ span.session-categories-links .screen-reader-text {
 
 span.session-categories-links {
 	display: block;
-}
-
-.wp-block-group.sponsors .wordcamp-post-list__post {
-	outline: 1px solid rgba(0, 0, 0, 0.15);
-	outline-offset: -.5em;
-	padding: 1em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 200px;
-}
-
-.wp-block-group.sponsors .wordcamp-post-list__post img {
-	max-height: calc(200px - 2em);
-	width: auto;
 }
 
 .tix_tickets_table {
