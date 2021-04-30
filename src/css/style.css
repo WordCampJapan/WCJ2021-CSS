@@ -6013,6 +6013,7 @@ tfoot tr {
 a.wp-block-button__link {
 	background: #db6b31;
 	border-radius: 3em;
+	font-size: 1.7rem;
 }
 
 a.wp-block-button__link:after {
