@@ -1218,7 +1218,8 @@ ul.social-icons li {
 
 .social-icons a {
 	align-items: center;
-	background: #cd2653;
+	/* background: #cd2653; */
+	background: #315bc2;
 	border-radius: 50%;
 	color: #fff;
 	display: flex;
