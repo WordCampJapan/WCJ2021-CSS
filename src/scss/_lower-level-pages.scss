@@ -166,3 +166,11 @@ h3,h4,h5 {
 		color: #8dc4e6;
 	}
 }
+
+// 参加者一覧 / Attendees
+#tix-attendees {
+	max-width: 120rem;
+	.avatar {
+		border-radius: 6px;
+	}
+}

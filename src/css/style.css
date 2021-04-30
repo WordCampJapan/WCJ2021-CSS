@@ -7652,3 +7652,11 @@ h3.wapuu:before, h4.wapuu:before, h5.wapuu:before {
 	background-image: url(https://japan.wordcamp.org/2021/files/2021/04/icon_winter.png);
 	color: #8dc4e6;
 }
+
+#tix-attendees {
+	max-width: 120rem;
+}
+
+#tix-attendees .avatar {
+	border-radius: 6px;
+}
