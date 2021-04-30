@@ -6549,6 +6549,10 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	margin-top: 1rem;
 }
 
+.top-event .wp-block-button a {
+	font-size: initial;
+}
+
 @media screen and (max-width: 767px) {
 	.top-event-head .top-event-head-title {
 		font-size: 3.6rem;
