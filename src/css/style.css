@@ -6549,21 +6549,6 @@ body.home #site-content h2.about-wc-title:after, body.page-id-599 #site-content 
 	margin-top: 1rem;
 }
 
-.top-event .wp-block-button a {
-	padding: 1.1em 2.5em 1.1em 1.44em;
-}
-
-.top-event .wp-block-button::after {
-	content: "";
-	width: 8px;
-	height: 15px;
-	display: inline-block;
-	position: relative;
-	top: 2px;
-	right: 30px;
-	background: url("https://japan.wordcamp.org/2021/files/2021/03/btn-right.png") no-repeat;
-}
-
 @media screen and (max-width: 767px) {
 	.top-event-head .top-event-head-title {
 		font-size: 3.6rem;
