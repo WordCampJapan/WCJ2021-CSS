@@ -2415,17 +2415,6 @@ h2.entry-title {
 	width: 100vw;
 }
 
-.singular .featured-media::before {
-	background: #fff;
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: 50%;
-	left: 0;
-	right: 0;
-	top: 0;
-}
-
 .featured-media img {
 	margin: 0 auto;
 }
@@ -5706,6 +5695,7 @@ body,
 }
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	margin: auto;
 	max-width: 80rem;
 }
 
