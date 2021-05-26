@@ -55,11 +55,13 @@ $right_media_border_color: $secondary;
 }
 .fukidashi-left-media {
 	grid-template-columns: 20% auto!important;
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 15% auto!important;
+	}
 	.wp-block-media-text__content {
 		border-color: $left_media_border_color;
 		margin-left: 1.2em;
 		@media screen and (min-width: 768px) {
-			grid-template-columns: 10% auto!important;
 			margin-left: 2em;
 		}
 		&:after,
@@ -77,11 +79,13 @@ $right_media_border_color: $secondary;
 }
 .fukidashi-right-media {
 	grid-template-columns: auto 20%!important;
+	@media screen and (min-width: 768px) {
+		grid-template-columns: auto 15%!important;
+	}
 	.wp-block-media-text__content {
 		border-color: $right_media_border_color;
 		margin-right: 1.2em;
 		@media screen and (min-width: 768px) {
-			grid-template-columns: auto 10%!important;
 			margin-right: 2em;
 		}
 		&:after,

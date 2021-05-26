@@ -7458,6 +7458,12 @@ a.to-the-top:hover > span:last-child:after {
 	grid-template-columns: 20% auto !important;
 }
 
+@media screen and (min-width: 768px) {
+	.fukidashi-left-media {
+		grid-template-columns: 15% auto !important;
+	}
+}
+
 .fukidashi-left-media .wp-block-media-text__content {
 	border-color: #315bc2;
 	margin-left: 1.2em;
@@ -7465,7 +7471,6 @@ a.to-the-top:hover > span:last-child:after {
 
 @media screen and (min-width: 768px) {
 	.fukidashi-left-media .wp-block-media-text__content {
-		grid-template-columns: 10% auto !important;
 		margin-left: 2em;
 	}
 }
@@ -7487,6 +7492,12 @@ a.to-the-top:hover > span:last-child:after {
 	grid-template-columns: auto 20% !important;
 }
 
+@media screen and (min-width: 768px) {
+	.fukidashi-right-media {
+		grid-template-columns: auto 15% !important;
+	}
+}
+
 .fukidashi-right-media .wp-block-media-text__content {
 	border-color: #db6b31;
 	margin-right: 1.2em;
@@ -7494,7 +7505,6 @@ a.to-the-top:hover > span:last-child:after {
 
 @media screen and (min-width: 768px) {
 	.fukidashi-right-media .wp-block-media-text__content {
-		grid-template-columns: auto 10% !important;
 		margin-right: 2em;
 	}
 }
