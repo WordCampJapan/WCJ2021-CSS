@@ -5,16 +5,16 @@
 /* fukidashi */
 .fukidashi {
 	img {
-		border-radius: 30px;
+		border-radius: 6px;
 		padding: 5px;
 	}
 	.wp-block-media-text__content {
 		border:2px solid;
-		border-radius: 20px;
+		border-radius: 12px;
 		position: relative;
-		@media screen and (min-width: 768px) {
-			padding: 3rem 2rem;
-		}
+		// @media screen and (min-width: 768px) {
+		// 	padding: 3rem 2rem;
+		// }
 		&:after,
 		&:before{
 			border: solid transparent;
@@ -47,15 +47,21 @@ $right_media_border_color: $secondary;
 .fukidashi-left-media,
 .fukidashi-right-media {
 	.wp-block-media-text__content {
+		padding: 1.5rem;
 		@media screen and (min-width: 768px) {
 			padding: 3rem 2rem;
 		}
 	}
 }
 .fukidashi-left-media {
+	grid-template-columns: 20% auto!important;
 	.wp-block-media-text__content {
 		border-color: $left_media_border_color;
-		margin-left: 2em;
+		margin-left: 1em;
+		@media screen and (min-width: 768px) {
+			grid-template-columns: 10% auto!important;
+			margin-left: 2em;
+		}
 		&:after,
 		&:before{
 			right:100%;
@@ -70,9 +76,14 @@ $right_media_border_color: $secondary;
 	}
 }
 .fukidashi-right-media {
+	grid-template-columns: auto 20%!important;
 	.wp-block-media-text__content {
 		border-color: $right_media_border_color;
-		margin-right: 2em;
+		margin-right: 1em;
+		@media screen and (min-width: 768px) {
+			grid-template-columns: auto 10%!important;
+			margin-right: 2em;
+		}
 		&:after,
 		&:before{
 			left:100%;
