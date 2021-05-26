@@ -30,11 +30,14 @@ aside#cta {
 // CTA SP
 aside#cta-sp {
 	position: absolute;
-	top: 0;
+	top: 3.6rem;
 	left: 50%;
 	max-width: 320px;
 	transform: translateX(-50%);
 	z-index: 1000;
+	@media (min-width: 480px) {
+		top: 0;
+	}
 	@media (min-width: 780px) {
 		display: none;
 	}
