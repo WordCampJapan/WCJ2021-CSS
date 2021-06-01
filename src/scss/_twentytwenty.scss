@@ -5720,8 +5720,10 @@ a.to-the-top > * {
 	/* HEADER NAVIGATION */
 
 	.header-navigation-wrapper {
-		align-items: center;
-		display: flex;
+		// align-items: center;
+		// display: flex;
+		display: block;
+		margin: auto;
 	}
 
 	.primary-menu-wrapper {

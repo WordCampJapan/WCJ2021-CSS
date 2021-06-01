@@ -5122,8 +5122,8 @@ a.to-the-top > * {
 	}
 	/* HEADER NAVIGATION */
 	.header-navigation-wrapper {
-		align-items: center;
-		display: flex;
+		display: block;
+		margin: auto;
 	}
 	.primary-menu-wrapper {
 		display: block;
@@ -6725,12 +6725,6 @@ ul.wp-block-social-links {
 	.cover-header-inner-wrapper.screen-height {
 		min-height: 58vh;
 	}
-}
-
-.header-navigation-wrapper {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 ul.primary-menu {
