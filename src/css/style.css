@@ -1346,7 +1346,7 @@ body:not(.enable-search-modal) .site-logo img {
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 2;
+	z-index: auto;
 }
 
 .overlay-header .header-inner {
@@ -5091,7 +5091,7 @@ a.to-the-top > * {
 	/* Helper Classes ------------------------ */
 	/* Site Header --------------------------- */
 	#site-header {
-		z-index: 2;
+		z-index: auto;
 	}
 	.header-inner {
 		align-items: center;
@@ -5124,6 +5124,7 @@ a.to-the-top > * {
 	.header-navigation-wrapper {
 		display: block;
 		margin: auto;
+		z-index: 10001;
 	}
 	.primary-menu-wrapper {
 		display: block;
