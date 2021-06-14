@@ -363,3 +363,40 @@ a.wp-block-button__link {
 		}
 	}
 }
+
+.btn-spring {
+	a.wp-block-button__link {
+		background: #F5D3E0;
+		color: #791039;
+		&:hover {
+			background: lighten(#F5D3E0, 2%);
+		}
+	}
+}
+.btn-summer {
+	a.wp-block-button__link {
+		background: #ACD1B8;
+		color: #215331;
+		&:hover {
+			background: lighten(#ACD1B8, 5%);
+		}
+	}
+}
+.btn-autumn {
+	a.wp-block-button__link {
+		background: #F2D6BC;
+		color: #643D18;
+		&:hover {
+			background: lighten(#F2D6BC, 2%);
+		}
+	}
+}
+.btn-winter {
+	a.wp-block-button__link {
+		background: #CAE8F4;
+		color: #1C4E62;
+		&:hover {
+			background: lighten(#CAE8F4, 5%);
+		}
+	}
+}

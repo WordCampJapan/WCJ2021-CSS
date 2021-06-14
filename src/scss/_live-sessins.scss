@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+span.wordcamp-live-schedule__session-track {
+	background: #ccc;
+	border-radius: 1em;
+	display: block;
+	font-size: .8em;
+	height: 2em;
+	min-width: 4.5em;
+	padding: .2em;
+	text-align: center;
+	&.track-spring {
+		background: #F5D3E0;
+		color: #791039;
+	}
+	&.track-summer {
+		background: #ACD1B8;
+		color: #215331;
+	}
+	&.track-autumn {
+		background: #F2D6BC;
+		color: #643D18;
+	}
+	&.track-winter {
+		background: #CAE8F4;
+		color: #1C4E62;
+	}
+}
