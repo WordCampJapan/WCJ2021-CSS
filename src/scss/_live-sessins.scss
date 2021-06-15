@@ -28,3 +28,9 @@ span.wordcamp-live-schedule__session-track {
 		color: #1C4E62;
 	}
 }
+
+.wordcamp-live-schedule {
+	a.wordcamp-live-schedule__schedule-link.wp-block-button__link {
+		display: none;
+	}
+}

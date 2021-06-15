@@ -7853,3 +7853,7 @@ span.wordcamp-live-schedule__session-track.track-winter {
 	background: #CAE8F4;
 	color: #1C4E62;
 }
+
+.wordcamp-live-schedule a.wordcamp-live-schedule__schedule-link.wp-block-button__link {
+	display: none;
+}
